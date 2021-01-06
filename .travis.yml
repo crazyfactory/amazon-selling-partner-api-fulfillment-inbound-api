@@ -15,7 +15,6 @@ before_script:
 
 script:
   - composer test:clover
-  - composer lint
 
 deploy:
     provider: script
