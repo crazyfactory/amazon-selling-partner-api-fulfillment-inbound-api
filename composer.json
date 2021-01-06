@@ -37,5 +37,18 @@
     "psr-4": {
       "Swagger\\Client\\": "test/"
     }
-  }
+  },
+  "scripts": {
+    "test": "phpunit -c phpunit.xml.dist",
+    "test:clover": "phpunit -c phpunit.xml.dist --coverage-clover=coverage/clover.xml.dist",
+    "test:html": "phpunit -c phpunit.xml.dist --coverage-html=coverage/html",
+    "lint": "phpcs --standard=phpcs.xml -p",
+    "lint:fix": "phpcbf --standard=phpcs.xml -p"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://php.fury.io/q_omCXxCokXrnmmFhsod/crazyfactory/"
+    }
+  ]
 }
