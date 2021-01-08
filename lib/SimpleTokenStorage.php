@@ -1,6 +1,5 @@
 <?php
 namespace CrazyFactory\SpapiClient;
-use CrazyFactory\Spapi\TokenStorageInterface;
 
 class SimpleTokenStorage implements TokenStorageInterface {
 
@@ -9,7 +8,6 @@ class SimpleTokenStorage implements TokenStorageInterface {
   {
     $this->filePath = $filePath;
   }
-
 
   public function getToken($key): ?array
   {
@@ -21,7 +19,6 @@ class SimpleTokenStorage implements TokenStorageInterface {
     }
     return null;
   }
-
 
   public function storeToken($key, $value)
   {

@@ -1,5 +1,5 @@
 <?php
-namespace CrazyFactory\Spapi;
+namespace CrazyFactory\SpapiClient;
 
 interface TokenStorageInterface {
   public function getToken($key): ?array;
