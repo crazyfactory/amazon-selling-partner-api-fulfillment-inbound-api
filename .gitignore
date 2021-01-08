@@ -23,3 +23,5 @@ composer.phar
 # tests
 /coverage/
 tests/.lock
+auth.json
+.netrc
