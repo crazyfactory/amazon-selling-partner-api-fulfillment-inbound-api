@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * NonPartneredSmallParcelDataOutput Class Doc Comment
  *
  * @category Class
  * @description Information returned by Amazon about a Small Parcel shipment by a carrier that has not partnered with Amazon.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class NonPartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'package_list' => '\CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelPackageOutputList'
+        'package_list' => '\CrazyFactory\SpapiClient\Model\NonPartneredSmallParcelPackageOutputList'
     ];
 
     /**
@@ -211,7 +211,7 @@ class NonPartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets package_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelPackageOutputList
+     * @return \CrazyFactory\SpapiClient\Model\NonPartneredSmallParcelPackageOutputList
      */
     public function getPackageList()
     {
@@ -221,7 +221,7 @@ class NonPartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets package_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelPackageOutputList $package_list package_list
+     * @param \CrazyFactory\SpapiClient\Model\NonPartneredSmallParcelPackageOutputList $package_list package_list
      *
      * @return $this
      */

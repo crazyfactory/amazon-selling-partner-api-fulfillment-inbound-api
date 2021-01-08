@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * SKUPrepInstructionsList Class Doc Comment
  *
  * @category Class
  * @description A list of SKU labeling requirements and item preparation instructions.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

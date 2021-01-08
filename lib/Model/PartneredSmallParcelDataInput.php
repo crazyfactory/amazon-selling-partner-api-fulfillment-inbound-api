@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * PartneredSmallParcelDataInput Class Doc Comment
  *
  * @category Class
  * @description Information that is required by an Amazon-partnered carrier to ship a Small Parcel inbound shipment.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class PartneredSmallParcelDataInput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'package_list' => '\CrazyFactory\Spapi\Client\Model\PartneredSmallParcelPackageInputList',
+        'package_list' => '\CrazyFactory\SpapiClient\Model\PartneredSmallParcelPackageInputList',
         'carrier_name' => 'string'
     ];
 
@@ -214,7 +214,7 @@ class PartneredSmallParcelDataInput implements ModelInterface, ArrayAccess
     /**
      * Gets package_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\PartneredSmallParcelPackageInputList
+     * @return \CrazyFactory\SpapiClient\Model\PartneredSmallParcelPackageInputList
      */
     public function getPackageList()
     {
@@ -224,7 +224,7 @@ class PartneredSmallParcelDataInput implements ModelInterface, ArrayAccess
     /**
      * Sets package_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\PartneredSmallParcelPackageInputList $package_list package_list
+     * @param \CrazyFactory\SpapiClient\Model\PartneredSmallParcelPackageInputList $package_list package_list
      *
      * @return $this
      */

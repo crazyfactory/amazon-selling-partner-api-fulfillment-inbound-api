@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * GetInboundGuidanceResult Class Doc Comment
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class GetInboundGuidanceResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'sku_inbound_guidance_list' => '\CrazyFactory\Spapi\Client\Model\SKUInboundGuidanceList',
-        'invalid_sku_list' => '\CrazyFactory\Spapi\Client\Model\InvalidSKUList',
-        'asin_inbound_guidance_list' => '\CrazyFactory\Spapi\Client\Model\ASINInboundGuidanceList',
-        'invalid_asin_list' => '\CrazyFactory\Spapi\Client\Model\InvalidASINList'
+        'sku_inbound_guidance_list' => '\CrazyFactory\SpapiClient\Model\SKUInboundGuidanceList',
+        'invalid_sku_list' => '\CrazyFactory\SpapiClient\Model\InvalidSKUList',
+        'asin_inbound_guidance_list' => '\CrazyFactory\SpapiClient\Model\ASINInboundGuidanceList',
+        'invalid_asin_list' => '\CrazyFactory\SpapiClient\Model\InvalidASINList'
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetInboundGuidanceResult implements ModelInterface, ArrayAccess
     /**
      * Gets sku_inbound_guidance_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\SKUInboundGuidanceList
+     * @return \CrazyFactory\SpapiClient\Model\SKUInboundGuidanceList
      */
     public function getSkuInboundGuidanceList()
     {
@@ -235,7 +235,7 @@ class GetInboundGuidanceResult implements ModelInterface, ArrayAccess
     /**
      * Sets sku_inbound_guidance_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\SKUInboundGuidanceList $sku_inbound_guidance_list sku_inbound_guidance_list
+     * @param \CrazyFactory\SpapiClient\Model\SKUInboundGuidanceList $sku_inbound_guidance_list sku_inbound_guidance_list
      *
      * @return $this
      */
@@ -249,7 +249,7 @@ class GetInboundGuidanceResult implements ModelInterface, ArrayAccess
     /**
      * Gets invalid_sku_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\InvalidSKUList
+     * @return \CrazyFactory\SpapiClient\Model\InvalidSKUList
      */
     public function getInvalidSkuList()
     {
@@ -259,7 +259,7 @@ class GetInboundGuidanceResult implements ModelInterface, ArrayAccess
     /**
      * Sets invalid_sku_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\InvalidSKUList $invalid_sku_list invalid_sku_list
+     * @param \CrazyFactory\SpapiClient\Model\InvalidSKUList $invalid_sku_list invalid_sku_list
      *
      * @return $this
      */
@@ -273,7 +273,7 @@ class GetInboundGuidanceResult implements ModelInterface, ArrayAccess
     /**
      * Gets asin_inbound_guidance_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\ASINInboundGuidanceList
+     * @return \CrazyFactory\SpapiClient\Model\ASINInboundGuidanceList
      */
     public function getAsinInboundGuidanceList()
     {
@@ -283,7 +283,7 @@ class GetInboundGuidanceResult implements ModelInterface, ArrayAccess
     /**
      * Sets asin_inbound_guidance_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\ASINInboundGuidanceList $asin_inbound_guidance_list asin_inbound_guidance_list
+     * @param \CrazyFactory\SpapiClient\Model\ASINInboundGuidanceList $asin_inbound_guidance_list asin_inbound_guidance_list
      *
      * @return $this
      */
@@ -297,7 +297,7 @@ class GetInboundGuidanceResult implements ModelInterface, ArrayAccess
     /**
      * Gets invalid_asin_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\InvalidASINList
+     * @return \CrazyFactory\SpapiClient\Model\InvalidASINList
      */
     public function getInvalidAsinList()
     {
@@ -307,7 +307,7 @@ class GetInboundGuidanceResult implements ModelInterface, ArrayAccess
     /**
      * Sets invalid_asin_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\InvalidASINList $invalid_asin_list invalid_asin_list
+     * @param \CrazyFactory\SpapiClient\Model\InvalidASINList $invalid_asin_list invalid_asin_list
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * NonPartneredSmallParcelPackageInput Class Doc Comment
  *
  * @category Class
  * @description The tracking number of the package, provided by the carrier.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class NonPartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tracking_id' => '\CrazyFactory\Spapi\Client\Model\TrackingId'
+        'tracking_id' => '\CrazyFactory\SpapiClient\Model\TrackingId'
     ];
 
     /**
@@ -211,7 +211,7 @@ class NonPartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
     /**
      * Gets tracking_id
      *
-     * @return \CrazyFactory\Spapi\Client\Model\TrackingId
+     * @return \CrazyFactory\SpapiClient\Model\TrackingId
      */
     public function getTrackingId()
     {
@@ -221,7 +221,7 @@ class NonPartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
     /**
      * Sets tracking_id
      *
-     * @param \CrazyFactory\Spapi\Client\Model\TrackingId $tracking_id tracking_id
+     * @param \CrazyFactory\SpapiClient\Model\TrackingId $tracking_id tracking_id
      *
      * @return $this
      */

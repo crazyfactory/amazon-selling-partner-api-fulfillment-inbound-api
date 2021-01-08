@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace CrazyFactory\Spapi\Client;
+namespace CrazyFactory\SpapiClient;
 
 /**
  * ASINPrepInstructionsTest Class Doc Comment
  *
  * @category    Class
  * @description Item preparation instructions to help with item sourcing decisions.
- * @package     CrazyFactory\Spapi\Client
+ * @package     CrazyFactory\SpapiClient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

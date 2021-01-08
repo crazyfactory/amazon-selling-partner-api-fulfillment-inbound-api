@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * InboundShipmentPlanItem Class Doc Comment
  *
  * @category Class
  * @description Item information used to create an inbound shipment. Returned by the createInboundShipmentPlan operation.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class InboundShipmentPlanItem implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'seller_sku' => 'string',
         'fulfillment_network_sku' => 'string',
-        'quantity' => '\CrazyFactory\Spapi\Client\Model\Quantity',
-        'prep_details_list' => '\CrazyFactory\Spapi\Client\Model\PrepDetailsList'
+        'quantity' => '\CrazyFactory\SpapiClient\Model\Quantity',
+        'prep_details_list' => '\CrazyFactory\SpapiClient\Model\PrepDetailsList'
     ];
 
     /**
@@ -283,7 +283,7 @@ class InboundShipmentPlanItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity
      *
-     * @return \CrazyFactory\Spapi\Client\Model\Quantity
+     * @return \CrazyFactory\SpapiClient\Model\Quantity
      */
     public function getQuantity()
     {
@@ -293,7 +293,7 @@ class InboundShipmentPlanItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity
      *
-     * @param \CrazyFactory\Spapi\Client\Model\Quantity $quantity The item quantity that you are shipping.
+     * @param \CrazyFactory\SpapiClient\Model\Quantity $quantity The item quantity that you are shipping.
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class InboundShipmentPlanItem implements ModelInterface, ArrayAccess
     /**
      * Gets prep_details_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\PrepDetailsList
+     * @return \CrazyFactory\SpapiClient\Model\PrepDetailsList
      */
     public function getPrepDetailsList()
     {
@@ -317,7 +317,7 @@ class InboundShipmentPlanItem implements ModelInterface, ArrayAccess
     /**
      * Sets prep_details_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\PrepDetailsList $prep_details_list prep_details_list
+     * @param \CrazyFactory\SpapiClient\Model\PrepDetailsList $prep_details_list prep_details_list
      *
      * @return $this
      */

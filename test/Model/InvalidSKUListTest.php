@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace CrazyFactory\Spapi\Client;
+namespace CrazyFactory\SpapiClient;
 
 /**
  * InvalidSKUListTest Class Doc Comment
  *
  * @category    Class
  * @description A list of invalid SKU values and the reason they are invalid.
- * @package     CrazyFactory\Spapi\Client
+ * @package     CrazyFactory\SpapiClient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

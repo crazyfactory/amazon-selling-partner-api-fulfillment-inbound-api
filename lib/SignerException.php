@@ -1,5 +1,5 @@
 <?php
-namespace CrazyFactory\Spapi\Client;
+namespace CrazyFactory\SpapiClient;
 
 class SignerException extends \Exception {
 

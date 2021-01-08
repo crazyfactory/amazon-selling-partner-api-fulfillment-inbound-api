@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * CommonTransportResult Class Doc Comment
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class CommonTransportResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'transport_result' => '\CrazyFactory\Spapi\Client\Model\TransportResult'
+        'transport_result' => '\CrazyFactory\SpapiClient\Model\TransportResult'
     ];
 
     /**
@@ -207,7 +207,7 @@ class CommonTransportResult implements ModelInterface, ArrayAccess
     /**
      * Gets transport_result
      *
-     * @return \CrazyFactory\Spapi\Client\Model\TransportResult
+     * @return \CrazyFactory\SpapiClient\Model\TransportResult
      */
     public function getTransportResult()
     {
@@ -217,7 +217,7 @@ class CommonTransportResult implements ModelInterface, ArrayAccess
     /**
      * Sets transport_result
      *
-     * @param \CrazyFactory\Spapi\Client\Model\TransportResult $transport_result transport_result
+     * @param \CrazyFactory\SpapiClient\Model\TransportResult $transport_result transport_result
      *
      * @return $this
      */

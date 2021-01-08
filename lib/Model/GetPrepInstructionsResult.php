@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * GetPrepInstructionsResult Class Doc Comment
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class GetPrepInstructionsResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'sku_prep_instructions_list' => '\CrazyFactory\Spapi\Client\Model\SKUPrepInstructionsList',
-        'invalid_sku_list' => '\CrazyFactory\Spapi\Client\Model\InvalidSKUList',
-        'asin_prep_instructions_list' => '\CrazyFactory\Spapi\Client\Model\ASINPrepInstructionsList',
-        'invalid_asin_list' => '\CrazyFactory\Spapi\Client\Model\InvalidASINList'
+        'sku_prep_instructions_list' => '\CrazyFactory\SpapiClient\Model\SKUPrepInstructionsList',
+        'invalid_sku_list' => '\CrazyFactory\SpapiClient\Model\InvalidSKUList',
+        'asin_prep_instructions_list' => '\CrazyFactory\SpapiClient\Model\ASINPrepInstructionsList',
+        'invalid_asin_list' => '\CrazyFactory\SpapiClient\Model\InvalidASINList'
     ];
 
     /**
@@ -225,7 +225,7 @@ class GetPrepInstructionsResult implements ModelInterface, ArrayAccess
     /**
      * Gets sku_prep_instructions_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\SKUPrepInstructionsList
+     * @return \CrazyFactory\SpapiClient\Model\SKUPrepInstructionsList
      */
     public function getSkuPrepInstructionsList()
     {
@@ -235,7 +235,7 @@ class GetPrepInstructionsResult implements ModelInterface, ArrayAccess
     /**
      * Sets sku_prep_instructions_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\SKUPrepInstructionsList $sku_prep_instructions_list sku_prep_instructions_list
+     * @param \CrazyFactory\SpapiClient\Model\SKUPrepInstructionsList $sku_prep_instructions_list sku_prep_instructions_list
      *
      * @return $this
      */
@@ -249,7 +249,7 @@ class GetPrepInstructionsResult implements ModelInterface, ArrayAccess
     /**
      * Gets invalid_sku_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\InvalidSKUList
+     * @return \CrazyFactory\SpapiClient\Model\InvalidSKUList
      */
     public function getInvalidSkuList()
     {
@@ -259,7 +259,7 @@ class GetPrepInstructionsResult implements ModelInterface, ArrayAccess
     /**
      * Sets invalid_sku_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\InvalidSKUList $invalid_sku_list invalid_sku_list
+     * @param \CrazyFactory\SpapiClient\Model\InvalidSKUList $invalid_sku_list invalid_sku_list
      *
      * @return $this
      */
@@ -273,7 +273,7 @@ class GetPrepInstructionsResult implements ModelInterface, ArrayAccess
     /**
      * Gets asin_prep_instructions_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\ASINPrepInstructionsList
+     * @return \CrazyFactory\SpapiClient\Model\ASINPrepInstructionsList
      */
     public function getAsinPrepInstructionsList()
     {
@@ -283,7 +283,7 @@ class GetPrepInstructionsResult implements ModelInterface, ArrayAccess
     /**
      * Sets asin_prep_instructions_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\ASINPrepInstructionsList $asin_prep_instructions_list asin_prep_instructions_list
+     * @param \CrazyFactory\SpapiClient\Model\ASINPrepInstructionsList $asin_prep_instructions_list asin_prep_instructions_list
      *
      * @return $this
      */
@@ -297,7 +297,7 @@ class GetPrepInstructionsResult implements ModelInterface, ArrayAccess
     /**
      * Gets invalid_asin_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\InvalidASINList
+     * @return \CrazyFactory\SpapiClient\Model\InvalidASINList
      */
     public function getInvalidAsinList()
     {
@@ -307,7 +307,7 @@ class GetPrepInstructionsResult implements ModelInterface, ArrayAccess
     /**
      * Sets invalid_asin_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\InvalidASINList $invalid_asin_list invalid_asin_list
+     * @param \CrazyFactory\SpapiClient\Model\InvalidASINList $invalid_asin_list invalid_asin_list
      *
      * @return $this
      */

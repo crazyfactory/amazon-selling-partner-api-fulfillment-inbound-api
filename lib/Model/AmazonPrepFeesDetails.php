@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * AmazonPrepFeesDetails Class Doc Comment
  *
  * @category Class
  * @description The fees for Amazon to prep goods for shipment.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class AmazonPrepFeesDetails implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'prep_instruction' => '\CrazyFactory\Spapi\Client\Model\PrepInstruction',
-        'fee_per_unit' => '\CrazyFactory\Spapi\Client\Model\Amount'
+        'prep_instruction' => '\CrazyFactory\SpapiClient\Model\PrepInstruction',
+        'fee_per_unit' => '\CrazyFactory\SpapiClient\Model\Amount'
     ];
 
     /**
@@ -214,7 +214,7 @@ class AmazonPrepFeesDetails implements ModelInterface, ArrayAccess
     /**
      * Gets prep_instruction
      *
-     * @return \CrazyFactory\Spapi\Client\Model\PrepInstruction
+     * @return \CrazyFactory\SpapiClient\Model\PrepInstruction
      */
     public function getPrepInstruction()
     {
@@ -224,7 +224,7 @@ class AmazonPrepFeesDetails implements ModelInterface, ArrayAccess
     /**
      * Sets prep_instruction
      *
-     * @param \CrazyFactory\Spapi\Client\Model\PrepInstruction $prep_instruction prep_instruction
+     * @param \CrazyFactory\SpapiClient\Model\PrepInstruction $prep_instruction prep_instruction
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class AmazonPrepFeesDetails implements ModelInterface, ArrayAccess
     /**
      * Gets fee_per_unit
      *
-     * @return \CrazyFactory\Spapi\Client\Model\Amount
+     * @return \CrazyFactory\SpapiClient\Model\Amount
      */
     public function getFeePerUnit()
     {
@@ -248,7 +248,7 @@ class AmazonPrepFeesDetails implements ModelInterface, ArrayAccess
     /**
      * Sets fee_per_unit
      *
-     * @param \CrazyFactory\Spapi\Client\Model\Amount $fee_per_unit The fee for Amazon to prepare 1 unit.
+     * @param \CrazyFactory\SpapiClient\Model\Amount $fee_per_unit The fee for Amazon to prepare 1 unit.
      *
      * @return $this
      */

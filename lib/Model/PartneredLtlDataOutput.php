@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * PartneredLtlDataOutput Class Doc Comment
  *
  * @category Class
  * @description Information returned by Amazon about a Less Than Truckload/Full Truckload (LTL/FTL) shipment by an Amazon-partnered carrier.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,20 +58,20 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'contact' => '\CrazyFactory\Spapi\Client\Model\Contact',
-        'box_count' => '\CrazyFactory\Spapi\Client\Model\UnsignedIntType',
-        'seller_freight_class' => '\CrazyFactory\Spapi\Client\Model\SellerFreightClass',
-        'freight_ready_date' => '\CrazyFactory\Spapi\Client\Model\DateStringType',
-        'pallet_list' => '\CrazyFactory\Spapi\Client\Model\PalletList',
-        'total_weight' => '\CrazyFactory\Spapi\Client\Model\Weight',
-        'seller_declared_value' => '\CrazyFactory\Spapi\Client\Model\Amount',
-        'amazon_calculated_value' => '\CrazyFactory\Spapi\Client\Model\Amount',
-        'preview_pickup_date' => '\CrazyFactory\Spapi\Client\Model\DateStringType',
-        'preview_delivery_date' => '\CrazyFactory\Spapi\Client\Model\DateStringType',
-        'preview_freight_class' => '\CrazyFactory\Spapi\Client\Model\SellerFreightClass',
+        'contact' => '\CrazyFactory\SpapiClient\Model\Contact',
+        'box_count' => '\CrazyFactory\SpapiClient\Model\UnsignedIntType',
+        'seller_freight_class' => '\CrazyFactory\SpapiClient\Model\SellerFreightClass',
+        'freight_ready_date' => '\CrazyFactory\SpapiClient\Model\DateStringType',
+        'pallet_list' => '\CrazyFactory\SpapiClient\Model\PalletList',
+        'total_weight' => '\CrazyFactory\SpapiClient\Model\Weight',
+        'seller_declared_value' => '\CrazyFactory\SpapiClient\Model\Amount',
+        'amazon_calculated_value' => '\CrazyFactory\SpapiClient\Model\Amount',
+        'preview_pickup_date' => '\CrazyFactory\SpapiClient\Model\DateStringType',
+        'preview_delivery_date' => '\CrazyFactory\SpapiClient\Model\DateStringType',
+        'preview_freight_class' => '\CrazyFactory\SpapiClient\Model\SellerFreightClass',
         'amazon_reference_id' => 'string',
         'is_bill_of_lading_available' => 'bool',
-        'partnered_estimate' => '\CrazyFactory\Spapi\Client\Model\PartneredEstimate',
+        'partnered_estimate' => '\CrazyFactory\SpapiClient\Model\PartneredEstimate',
         'carrier_name' => 'string'
     ];
 
@@ -325,7 +325,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets contact
      *
-     * @return \CrazyFactory\Spapi\Client\Model\Contact
+     * @return \CrazyFactory\SpapiClient\Model\Contact
      */
     public function getContact()
     {
@@ -335,7 +335,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets contact
      *
-     * @param \CrazyFactory\Spapi\Client\Model\Contact $contact Contact information for the person in the seller's organization who is responsible for the shipment. Used by the carrier if they have questions about the shipment.
+     * @param \CrazyFactory\SpapiClient\Model\Contact $contact Contact information for the person in the seller's organization who is responsible for the shipment. Used by the carrier if they have questions about the shipment.
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets box_count
      *
-     * @return \CrazyFactory\Spapi\Client\Model\UnsignedIntType
+     * @return \CrazyFactory\SpapiClient\Model\UnsignedIntType
      */
     public function getBoxCount()
     {
@@ -359,7 +359,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets box_count
      *
-     * @param \CrazyFactory\Spapi\Client\Model\UnsignedIntType $box_count The number of boxes in the shipment.
+     * @param \CrazyFactory\SpapiClient\Model\UnsignedIntType $box_count The number of boxes in the shipment.
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets seller_freight_class
      *
-     * @return \CrazyFactory\Spapi\Client\Model\SellerFreightClass
+     * @return \CrazyFactory\SpapiClient\Model\SellerFreightClass
      */
     public function getSellerFreightClass()
     {
@@ -383,7 +383,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets seller_freight_class
      *
-     * @param \CrazyFactory\Spapi\Client\Model\SellerFreightClass $seller_freight_class seller_freight_class
+     * @param \CrazyFactory\SpapiClient\Model\SellerFreightClass $seller_freight_class seller_freight_class
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets freight_ready_date
      *
-     * @return \CrazyFactory\Spapi\Client\Model\DateStringType
+     * @return \CrazyFactory\SpapiClient\Model\DateStringType
      */
     public function getFreightReadyDate()
     {
@@ -407,7 +407,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets freight_ready_date
      *
-     * @param \CrazyFactory\Spapi\Client\Model\DateStringType $freight_ready_date The date that the shipment will be ready to be picked up by the carrier. Must be in YYYY-MM-DD format.
+     * @param \CrazyFactory\SpapiClient\Model\DateStringType $freight_ready_date The date that the shipment will be ready to be picked up by the carrier. Must be in YYYY-MM-DD format.
      *
      * @return $this
      */
@@ -421,7 +421,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets pallet_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\PalletList
+     * @return \CrazyFactory\SpapiClient\Model\PalletList
      */
     public function getPalletList()
     {
@@ -431,7 +431,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets pallet_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\PalletList $pallet_list pallet_list
+     * @param \CrazyFactory\SpapiClient\Model\PalletList $pallet_list pallet_list
      *
      * @return $this
      */
@@ -445,7 +445,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets total_weight
      *
-     * @return \CrazyFactory\Spapi\Client\Model\Weight
+     * @return \CrazyFactory\SpapiClient\Model\Weight
      */
     public function getTotalWeight()
     {
@@ -455,7 +455,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets total_weight
      *
-     * @param \CrazyFactory\Spapi\Client\Model\Weight $total_weight The total weight of the shipment.
+     * @param \CrazyFactory\SpapiClient\Model\Weight $total_weight The total weight of the shipment.
      *
      * @return $this
      */
@@ -469,7 +469,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets seller_declared_value
      *
-     * @return \CrazyFactory\Spapi\Client\Model\Amount
+     * @return \CrazyFactory\SpapiClient\Model\Amount
      */
     public function getSellerDeclaredValue()
     {
@@ -479,7 +479,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets seller_declared_value
      *
-     * @param \CrazyFactory\Spapi\Client\Model\Amount $seller_declared_value Your declaration of the total value of the inventory in the shipment.
+     * @param \CrazyFactory\SpapiClient\Model\Amount $seller_declared_value Your declaration of the total value of the inventory in the shipment.
      *
      * @return $this
      */
@@ -493,7 +493,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets amazon_calculated_value
      *
-     * @return \CrazyFactory\Spapi\Client\Model\Amount
+     * @return \CrazyFactory\SpapiClient\Model\Amount
      */
     public function getAmazonCalculatedValue()
     {
@@ -503,7 +503,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets amazon_calculated_value
      *
-     * @param \CrazyFactory\Spapi\Client\Model\Amount $amazon_calculated_value Estimate by Amazon of the total value of the inventory in the shipment.
+     * @param \CrazyFactory\SpapiClient\Model\Amount $amazon_calculated_value Estimate by Amazon of the total value of the inventory in the shipment.
      *
      * @return $this
      */
@@ -517,7 +517,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets preview_pickup_date
      *
-     * @return \CrazyFactory\Spapi\Client\Model\DateStringType
+     * @return \CrazyFactory\SpapiClient\Model\DateStringType
      */
     public function getPreviewPickupDate()
     {
@@ -527,7 +527,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets preview_pickup_date
      *
-     * @param \CrazyFactory\Spapi\Client\Model\DateStringType $preview_pickup_date The estimated date that the shipment will be picked up by the carrier, in YYYY-MM-DD format.
+     * @param \CrazyFactory\SpapiClient\Model\DateStringType $preview_pickup_date The estimated date that the shipment will be picked up by the carrier, in YYYY-MM-DD format.
      *
      * @return $this
      */
@@ -541,7 +541,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets preview_delivery_date
      *
-     * @return \CrazyFactory\Spapi\Client\Model\DateStringType
+     * @return \CrazyFactory\SpapiClient\Model\DateStringType
      */
     public function getPreviewDeliveryDate()
     {
@@ -551,7 +551,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets preview_delivery_date
      *
-     * @param \CrazyFactory\Spapi\Client\Model\DateStringType $preview_delivery_date The estimated date that the shipment will be delivered to an Amazon fulfillment center, in YYYY-MM-DD format.
+     * @param \CrazyFactory\SpapiClient\Model\DateStringType $preview_delivery_date The estimated date that the shipment will be delivered to an Amazon fulfillment center, in YYYY-MM-DD format.
      *
      * @return $this
      */
@@ -565,7 +565,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets preview_freight_class
      *
-     * @return \CrazyFactory\Spapi\Client\Model\SellerFreightClass
+     * @return \CrazyFactory\SpapiClient\Model\SellerFreightClass
      */
     public function getPreviewFreightClass()
     {
@@ -575,7 +575,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets preview_freight_class
      *
-     * @param \CrazyFactory\Spapi\Client\Model\SellerFreightClass $preview_freight_class The freight class of the shipment as estimated by Amazon if you did not include a freight class when you called the putTransportDetails operation.
+     * @param \CrazyFactory\SpapiClient\Model\SellerFreightClass $preview_freight_class The freight class of the shipment as estimated by Amazon if you did not include a freight class when you called the putTransportDetails operation.
      *
      * @return $this
      */
@@ -637,7 +637,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets partnered_estimate
      *
-     * @return \CrazyFactory\Spapi\Client\Model\PartneredEstimate
+     * @return \CrazyFactory\SpapiClient\Model\PartneredEstimate
      */
     public function getPartneredEstimate()
     {
@@ -647,7 +647,7 @@ class PartneredLtlDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets partnered_estimate
      *
-     * @param \CrazyFactory\Spapi\Client\Model\PartneredEstimate $partnered_estimate The estimated shipping cost using an Amazon-partnered carrier.
+     * @param \CrazyFactory\SpapiClient\Model\PartneredEstimate $partnered_estimate The estimated shipping cost using an Amazon-partnered carrier.
      *
      * @return $this
      */

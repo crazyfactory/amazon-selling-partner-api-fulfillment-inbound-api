@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * CreateInboundShipmentPlanResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the createInboundShipmentPlan operation.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class CreateInboundShipmentPlanResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'payload' => '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResult',
-        'errors' => '\CrazyFactory\Spapi\Client\Model\ErrorList'
+        'payload' => '\CrazyFactory\SpapiClient\Model\CreateInboundShipmentPlanResult',
+        'errors' => '\CrazyFactory\SpapiClient\Model\ErrorList'
     ];
 
     /**
@@ -214,7 +214,7 @@ class CreateInboundShipmentPlanResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResult
+     * @return \CrazyFactory\SpapiClient\Model\CreateInboundShipmentPlanResult
      */
     public function getPayload()
     {
@@ -224,7 +224,7 @@ class CreateInboundShipmentPlanResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResult $payload The payload for the createInboundShipmentPlan operation.
+     * @param \CrazyFactory\SpapiClient\Model\CreateInboundShipmentPlanResult $payload The payload for the createInboundShipmentPlan operation.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class CreateInboundShipmentPlanResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \CrazyFactory\Spapi\Client\Model\ErrorList
+     * @return \CrazyFactory\SpapiClient\Model\ErrorList
      */
     public function getErrors()
     {
@@ -248,7 +248,7 @@ class CreateInboundShipmentPlanResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \CrazyFactory\Spapi\Client\Model\ErrorList $errors errors
+     * @param \CrazyFactory\SpapiClient\Model\ErrorList $errors errors
      *
      * @return $this
      */

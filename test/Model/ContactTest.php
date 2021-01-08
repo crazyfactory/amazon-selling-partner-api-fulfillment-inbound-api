@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace CrazyFactory\Spapi\Client;
+namespace CrazyFactory\SpapiClient;
 
 /**
  * ContactTest Class Doc Comment
  *
  * @category    Class
  * @description Contact information for the person in the seller&#39;s organization who is responsible for a Less Than Truckload/Full Truckload (LTL/FTL) shipment.
- * @package     CrazyFactory\Spapi\Client
+ * @package     CrazyFactory\SpapiClient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

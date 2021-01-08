@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * PartneredSmallParcelDataOutput Class Doc Comment
  *
  * @category Class
  * @description Information returned by Amazon about a Small Parcel shipment by an Amazon-partnered carrier.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class PartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'package_list' => '\CrazyFactory\Spapi\Client\Model\PartneredSmallParcelPackageOutputList',
-        'partnered_estimate' => '\CrazyFactory\Spapi\Client\Model\PartneredEstimate'
+        'package_list' => '\CrazyFactory\SpapiClient\Model\PartneredSmallParcelPackageOutputList',
+        'partnered_estimate' => '\CrazyFactory\SpapiClient\Model\PartneredEstimate'
     ];
 
     /**
@@ -217,7 +217,7 @@ class PartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets package_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\PartneredSmallParcelPackageOutputList
+     * @return \CrazyFactory\SpapiClient\Model\PartneredSmallParcelPackageOutputList
      */
     public function getPackageList()
     {
@@ -227,7 +227,7 @@ class PartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets package_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\PartneredSmallParcelPackageOutputList $package_list package_list
+     * @param \CrazyFactory\SpapiClient\Model\PartneredSmallParcelPackageOutputList $package_list package_list
      *
      * @return $this
      */
@@ -241,7 +241,7 @@ class PartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets partnered_estimate
      *
-     * @return \CrazyFactory\Spapi\Client\Model\PartneredEstimate
+     * @return \CrazyFactory\SpapiClient\Model\PartneredEstimate
      */
     public function getPartneredEstimate()
     {
@@ -251,7 +251,7 @@ class PartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets partnered_estimate
      *
-     * @param \CrazyFactory\Spapi\Client\Model\PartneredEstimate $partnered_estimate partnered_estimate
+     * @param \CrazyFactory\SpapiClient\Model\PartneredEstimate $partnered_estimate partnered_estimate
      *
      * @return $this
      */

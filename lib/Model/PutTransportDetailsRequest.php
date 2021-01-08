@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * PutTransportDetailsRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for a putTransportDetails operation.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class PutTransportDetailsRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'is_partnered' => 'bool',
-        'shipment_type' => '\CrazyFactory\Spapi\Client\Model\ShipmentType',
-        'transport_details' => '\CrazyFactory\Spapi\Client\Model\TransportDetailInput'
+        'shipment_type' => '\CrazyFactory\SpapiClient\Model\ShipmentType',
+        'transport_details' => '\CrazyFactory\SpapiClient\Model\TransportDetailInput'
     ];
 
     /**
@@ -253,7 +253,7 @@ class PutTransportDetailsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_type
      *
-     * @return \CrazyFactory\Spapi\Client\Model\ShipmentType
+     * @return \CrazyFactory\SpapiClient\Model\ShipmentType
      */
     public function getShipmentType()
     {
@@ -263,7 +263,7 @@ class PutTransportDetailsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_type
      *
-     * @param \CrazyFactory\Spapi\Client\Model\ShipmentType $shipment_type shipment_type
+     * @param \CrazyFactory\SpapiClient\Model\ShipmentType $shipment_type shipment_type
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class PutTransportDetailsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets transport_details
      *
-     * @return \CrazyFactory\Spapi\Client\Model\TransportDetailInput
+     * @return \CrazyFactory\SpapiClient\Model\TransportDetailInput
      */
     public function getTransportDetails()
     {
@@ -287,7 +287,7 @@ class PutTransportDetailsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets transport_details
      *
-     * @param \CrazyFactory\Spapi\Client\Model\TransportDetailInput $transport_details Information required to create an Amazon-partnered carrier shipping estimate, or to alert the Amazon fulfillment center to the arrival of an inbound shipment by a non-Amazon-partnered carrier.
+     * @param \CrazyFactory\SpapiClient\Model\TransportDetailInput $transport_details Information required to create an Amazon-partnered carrier shipping estimate, or to alert the Amazon fulfillment center to the arrival of an inbound shipment by a non-Amazon-partnered carrier.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * PartneredSmallParcelPackageInput Class Doc Comment
  *
  * @category Class
  * @description Dimension and weight information for the package.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class PartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'dimensions' => '\CrazyFactory\Spapi\Client\Model\Dimensions',
-        'weight' => '\CrazyFactory\Spapi\Client\Model\Weight'
+        'dimensions' => '\CrazyFactory\SpapiClient\Model\Dimensions',
+        'weight' => '\CrazyFactory\SpapiClient\Model\Weight'
     ];
 
     /**
@@ -220,7 +220,7 @@ class PartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
     /**
      * Gets dimensions
      *
-     * @return \CrazyFactory\Spapi\Client\Model\Dimensions
+     * @return \CrazyFactory\SpapiClient\Model\Dimensions
      */
     public function getDimensions()
     {
@@ -230,7 +230,7 @@ class PartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
     /**
      * Sets dimensions
      *
-     * @param \CrazyFactory\Spapi\Client\Model\Dimensions $dimensions dimensions
+     * @param \CrazyFactory\SpapiClient\Model\Dimensions $dimensions dimensions
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class PartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
     /**
      * Gets weight
      *
-     * @return \CrazyFactory\Spapi\Client\Model\Weight
+     * @return \CrazyFactory\SpapiClient\Model\Weight
      */
     public function getWeight()
     {
@@ -254,7 +254,7 @@ class PartneredSmallParcelPackageInput implements ModelInterface, ArrayAccess
     /**
      * Sets weight
      *
-     * @param \CrazyFactory\Spapi\Client\Model\Weight $weight weight
+     * @param \CrazyFactory\SpapiClient\Model\Weight $weight weight
      *
      * @return $this
      */

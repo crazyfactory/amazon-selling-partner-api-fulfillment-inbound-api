@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * NonPartneredSmallParcelDataInput Class Doc Comment
  *
  * @category Class
  * @description Information that you provide to Amazon about a Small Parcel shipment shipped by a carrier that has not partnered with Amazon.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class NonPartneredSmallParcelDataInput implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'carrier_name' => 'string',
-        'package_list' => '\CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelPackageInputList'
+        'package_list' => '\CrazyFactory\SpapiClient\Model\NonPartneredSmallParcelPackageInputList'
     ];
 
     /**
@@ -244,7 +244,7 @@ class NonPartneredSmallParcelDataInput implements ModelInterface, ArrayAccess
     /**
      * Gets package_list
      *
-     * @return \CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelPackageInputList
+     * @return \CrazyFactory\SpapiClient\Model\NonPartneredSmallParcelPackageInputList
      */
     public function getPackageList()
     {
@@ -254,7 +254,7 @@ class NonPartneredSmallParcelDataInput implements ModelInterface, ArrayAccess
     /**
      * Sets package_list
      *
-     * @param \CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelPackageInputList $package_list package_list
+     * @param \CrazyFactory\SpapiClient\Model\NonPartneredSmallParcelPackageInputList $package_list package_list
      *
      * @return $this
      */

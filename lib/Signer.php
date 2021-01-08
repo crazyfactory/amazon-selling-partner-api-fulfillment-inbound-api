@@ -1,5 +1,5 @@
 <?php
-namespace CrazyFactory\Spapi\Client;
+namespace CrazyFactory\SpapiClient;
 use GuzzleHttp\Psr7\Request;
 
 class Signer {

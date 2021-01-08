@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * Amount Class Doc Comment
  *
  * @category Class
  * @description The monetary value.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class Amount implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'currency_code' => '\CrazyFactory\Spapi\Client\Model\CurrencyCode',
-        'value' => '\CrazyFactory\Spapi\Client\Model\BigDecimalType'
+        'currency_code' => '\CrazyFactory\SpapiClient\Model\CurrencyCode',
+        'value' => '\CrazyFactory\SpapiClient\Model\BigDecimalType'
     ];
 
     /**
@@ -220,7 +220,7 @@ class Amount implements ModelInterface, ArrayAccess
     /**
      * Gets currency_code
      *
-     * @return \CrazyFactory\Spapi\Client\Model\CurrencyCode
+     * @return \CrazyFactory\SpapiClient\Model\CurrencyCode
      */
     public function getCurrencyCode()
     {
@@ -230,7 +230,7 @@ class Amount implements ModelInterface, ArrayAccess
     /**
      * Sets currency_code
      *
-     * @param \CrazyFactory\Spapi\Client\Model\CurrencyCode $currency_code currency_code
+     * @param \CrazyFactory\SpapiClient\Model\CurrencyCode $currency_code currency_code
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class Amount implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return \CrazyFactory\Spapi\Client\Model\BigDecimalType
+     * @return \CrazyFactory\SpapiClient\Model\BigDecimalType
      */
     public function getValue()
     {
@@ -254,7 +254,7 @@ class Amount implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param \CrazyFactory\Spapi\Client\Model\BigDecimalType $value The amount.
+     * @param \CrazyFactory\SpapiClient\Model\BigDecimalType $value The amount.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * InboundShipmentResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for this operation.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class InboundShipmentResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'payload' => '\CrazyFactory\Spapi\Client\Model\InboundShipmentResult',
-        'errors' => '\CrazyFactory\Spapi\Client\Model\ErrorList'
+        'payload' => '\CrazyFactory\SpapiClient\Model\InboundShipmentResult',
+        'errors' => '\CrazyFactory\SpapiClient\Model\ErrorList'
     ];
 
     /**
@@ -214,7 +214,7 @@ class InboundShipmentResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \CrazyFactory\Spapi\Client\Model\InboundShipmentResult
+     * @return \CrazyFactory\SpapiClient\Model\InboundShipmentResult
      */
     public function getPayload()
     {
@@ -224,7 +224,7 @@ class InboundShipmentResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \CrazyFactory\Spapi\Client\Model\InboundShipmentResult $payload The payload for this operation.
+     * @param \CrazyFactory\SpapiClient\Model\InboundShipmentResult $payload The payload for this operation.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class InboundShipmentResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \CrazyFactory\Spapi\Client\Model\ErrorList
+     * @return \CrazyFactory\SpapiClient\Model\ErrorList
      */
     public function getErrors()
     {
@@ -248,7 +248,7 @@ class InboundShipmentResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \CrazyFactory\Spapi\Client\Model\ErrorList $errors errors
+     * @param \CrazyFactory\SpapiClient\Model\ErrorList $errors errors
      *
      * @return $this
      */

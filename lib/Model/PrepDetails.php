@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * PrepDetails Class Doc Comment
  *
  * @category Class
  * @description Preparation instructions and who is responsible for the preparation.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class PrepDetails implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'prep_instruction' => '\CrazyFactory\Spapi\Client\Model\PrepInstruction',
-        'prep_owner' => '\CrazyFactory\Spapi\Client\Model\PrepOwner'
+        'prep_instruction' => '\CrazyFactory\SpapiClient\Model\PrepInstruction',
+        'prep_owner' => '\CrazyFactory\SpapiClient\Model\PrepOwner'
     ];
 
     /**
@@ -220,7 +220,7 @@ class PrepDetails implements ModelInterface, ArrayAccess
     /**
      * Gets prep_instruction
      *
-     * @return \CrazyFactory\Spapi\Client\Model\PrepInstruction
+     * @return \CrazyFactory\SpapiClient\Model\PrepInstruction
      */
     public function getPrepInstruction()
     {
@@ -230,7 +230,7 @@ class PrepDetails implements ModelInterface, ArrayAccess
     /**
      * Sets prep_instruction
      *
-     * @param \CrazyFactory\Spapi\Client\Model\PrepInstruction $prep_instruction prep_instruction
+     * @param \CrazyFactory\SpapiClient\Model\PrepInstruction $prep_instruction prep_instruction
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class PrepDetails implements ModelInterface, ArrayAccess
     /**
      * Gets prep_owner
      *
-     * @return \CrazyFactory\Spapi\Client\Model\PrepOwner
+     * @return \CrazyFactory\SpapiClient\Model\PrepOwner
      */
     public function getPrepOwner()
     {
@@ -254,7 +254,7 @@ class PrepDetails implements ModelInterface, ArrayAccess
     /**
      * Sets prep_owner
      *
-     * @param \CrazyFactory\Spapi\Client\Model\PrepOwner $prep_owner prep_owner
+     * @param \CrazyFactory\SpapiClient\Model\PrepOwner $prep_owner prep_owner
      *
      * @return $this
      */

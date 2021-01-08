@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * InboundShipmentPlan Class Doc Comment
  *
  * @category Class
  * @description Inbound shipment information used to create an inbound shipment. Returned by the createInboundShipmentPlan operation.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,10 +60,10 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'shipment_id' => 'string',
         'destination_fulfillment_center_id' => 'string',
-        'ship_to_address' => '\CrazyFactory\Spapi\Client\Model\Address',
-        'label_prep_type' => '\CrazyFactory\Spapi\Client\Model\LabelPrepType',
-        'items' => '\CrazyFactory\Spapi\Client\Model\InboundShipmentPlanItemList',
-        'estimated_box_contents_fee' => '\CrazyFactory\Spapi\Client\Model\BoxContentsFeeDetails'
+        'ship_to_address' => '\CrazyFactory\SpapiClient\Model\Address',
+        'label_prep_type' => '\CrazyFactory\SpapiClient\Model\LabelPrepType',
+        'items' => '\CrazyFactory\SpapiClient\Model\InboundShipmentPlanItemList',
+        'estimated_box_contents_fee' => '\CrazyFactory\SpapiClient\Model\BoxContentsFeeDetails'
     ];
 
     /**
@@ -301,7 +301,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     /**
      * Gets ship_to_address
      *
-     * @return \CrazyFactory\Spapi\Client\Model\Address
+     * @return \CrazyFactory\SpapiClient\Model\Address
      */
     public function getShipToAddress()
     {
@@ -311,7 +311,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     /**
      * Sets ship_to_address
      *
-     * @param \CrazyFactory\Spapi\Client\Model\Address $ship_to_address The address of the Amazon fulfillment center to which to ship the items.
+     * @param \CrazyFactory\SpapiClient\Model\Address $ship_to_address The address of the Amazon fulfillment center to which to ship the items.
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     /**
      * Gets label_prep_type
      *
-     * @return \CrazyFactory\Spapi\Client\Model\LabelPrepType
+     * @return \CrazyFactory\SpapiClient\Model\LabelPrepType
      */
     public function getLabelPrepType()
     {
@@ -335,7 +335,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     /**
      * Sets label_prep_type
      *
-     * @param \CrazyFactory\Spapi\Client\Model\LabelPrepType $label_prep_type label_prep_type
+     * @param \CrazyFactory\SpapiClient\Model\LabelPrepType $label_prep_type label_prep_type
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \CrazyFactory\Spapi\Client\Model\InboundShipmentPlanItemList
+     * @return \CrazyFactory\SpapiClient\Model\InboundShipmentPlanItemList
      */
     public function getItems()
     {
@@ -359,7 +359,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \CrazyFactory\Spapi\Client\Model\InboundShipmentPlanItemList $items SKU and quantity information for the items in the shipment.
+     * @param \CrazyFactory\SpapiClient\Model\InboundShipmentPlanItemList $items SKU and quantity information for the items in the shipment.
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     /**
      * Gets estimated_box_contents_fee
      *
-     * @return \CrazyFactory\Spapi\Client\Model\BoxContentsFeeDetails
+     * @return \CrazyFactory\SpapiClient\Model\BoxContentsFeeDetails
      */
     public function getEstimatedBoxContentsFee()
     {
@@ -383,7 +383,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     /**
      * Sets estimated_box_contents_fee
      *
-     * @param \CrazyFactory\Spapi\Client\Model\BoxContentsFeeDetails $estimated_box_contents_fee estimated_box_contents_fee
+     * @param \CrazyFactory\SpapiClient\Model\BoxContentsFeeDetails $estimated_box_contents_fee estimated_box_contents_fee
      *
      * @return $this
      */

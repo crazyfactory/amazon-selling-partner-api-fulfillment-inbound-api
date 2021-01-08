@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * Weight Class Doc Comment
  *
  * @category Class
  * @description The weight of the package.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class Weight implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'value' => '\CrazyFactory\Spapi\Client\Model\BigDecimalType',
-        'unit' => '\CrazyFactory\Spapi\Client\Model\UnitOfWeight'
+        'value' => '\CrazyFactory\SpapiClient\Model\BigDecimalType',
+        'unit' => '\CrazyFactory\SpapiClient\Model\UnitOfWeight'
     ];
 
     /**
@@ -220,7 +220,7 @@ class Weight implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return \CrazyFactory\Spapi\Client\Model\BigDecimalType
+     * @return \CrazyFactory\SpapiClient\Model\BigDecimalType
      */
     public function getValue()
     {
@@ -230,7 +230,7 @@ class Weight implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param \CrazyFactory\Spapi\Client\Model\BigDecimalType $value The weight value.
+     * @param \CrazyFactory\SpapiClient\Model\BigDecimalType $value The weight value.
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class Weight implements ModelInterface, ArrayAccess
     /**
      * Gets unit
      *
-     * @return \CrazyFactory\Spapi\Client\Model\UnitOfWeight
+     * @return \CrazyFactory\SpapiClient\Model\UnitOfWeight
      */
     public function getUnit()
     {
@@ -254,7 +254,7 @@ class Weight implements ModelInterface, ArrayAccess
     /**
      * Sets unit
      *
-     * @param \CrazyFactory\Spapi\Client\Model\UnitOfWeight $unit unit
+     * @param \CrazyFactory\SpapiClient\Model\UnitOfWeight $unit unit
      *
      * @return $this
      */

@@ -30,12 +30,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Swagger\\Client\\": "lib/"
+      "CrazyFactory\\SpapiClient\\": "lib/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Swagger\\Client\\": "test/"
+      "CrazyFactory\\SpapiClient\\": "test/"
     }
   },
   "scripts": {

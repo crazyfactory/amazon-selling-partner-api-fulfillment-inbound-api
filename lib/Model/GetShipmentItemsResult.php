@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * GetShipmentItemsResult Class Doc Comment
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class GetShipmentItemsResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'item_data' => '\CrazyFactory\Spapi\Client\Model\InboundShipmentItemList',
+        'item_data' => '\CrazyFactory\SpapiClient\Model\InboundShipmentItemList',
         'next_token' => 'string'
     ];
 
@@ -213,7 +213,7 @@ class GetShipmentItemsResult implements ModelInterface, ArrayAccess
     /**
      * Gets item_data
      *
-     * @return \CrazyFactory\Spapi\Client\Model\InboundShipmentItemList
+     * @return \CrazyFactory\SpapiClient\Model\InboundShipmentItemList
      */
     public function getItemData()
     {
@@ -223,7 +223,7 @@ class GetShipmentItemsResult implements ModelInterface, ArrayAccess
     /**
      * Sets item_data
      *
-     * @param \CrazyFactory\Spapi\Client\Model\InboundShipmentItemList $item_data A list of item information for an inbound shipment.
+     * @param \CrazyFactory\SpapiClient\Model\InboundShipmentItemList $item_data A list of item information for an inbound shipment.
      *
      * @return $this
      */

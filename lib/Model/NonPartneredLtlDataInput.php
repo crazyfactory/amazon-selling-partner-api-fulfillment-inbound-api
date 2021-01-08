@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * NonPartneredLtlDataInput Class Doc Comment
  *
  * @category Class
  * @description Information that you provide to Amazon about a Less Than Truckload/Full Truckload (LTL/FTL) shipment by a carrier that has not partnered with Amazon.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class NonPartneredLtlDataInput implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'carrier_name' => 'string',
-        'pro_number' => '\CrazyFactory\Spapi\Client\Model\ProNumber'
+        'pro_number' => '\CrazyFactory\SpapiClient\Model\ProNumber'
     ];
 
     /**
@@ -244,7 +244,7 @@ class NonPartneredLtlDataInput implements ModelInterface, ArrayAccess
     /**
      * Gets pro_number
      *
-     * @return \CrazyFactory\Spapi\Client\Model\ProNumber
+     * @return \CrazyFactory\SpapiClient\Model\ProNumber
      */
     public function getProNumber()
     {
@@ -254,7 +254,7 @@ class NonPartneredLtlDataInput implements ModelInterface, ArrayAccess
     /**
      * Sets pro_number
      *
-     * @param \CrazyFactory\Spapi\Client\Model\ProNumber $pro_number pro_number
+     * @param \CrazyFactory\SpapiClient\Model\ProNumber $pro_number pro_number
      *
      * @return $this
      */

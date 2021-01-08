@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,15 +27,15 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+namespace CrazyFactory\SpapiClient\Model;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * UnitOfWeight Class Doc Comment
  *
  * @category Class
  * @description Indicates the unit of weight.
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

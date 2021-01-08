@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace CrazyFactory\Spapi\Client\Model;
+namespace CrazyFactory\SpapiClient\Model;
 
 use \ArrayAccess;
-use \CrazyFactory\Spapi\Client\ObjectSerializer;
+use \CrazyFactory\SpapiClient\ObjectSerializer;
 
 /**
  * InvalidASIN Class Doc Comment
  *
  * @category Class
- * @package  CrazyFactory\Spapi\Client
+ * @package  CrazyFactory\SpapiClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class InvalidASIN implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'asin' => 'string',
-        'error_reason' => '\CrazyFactory\Spapi\Client\Model\ErrorReason'
+        'error_reason' => '\CrazyFactory\SpapiClient\Model\ErrorReason'
     ];
 
     /**
@@ -237,7 +237,7 @@ class InvalidASIN implements ModelInterface, ArrayAccess
     /**
      * Gets error_reason
      *
-     * @return \CrazyFactory\Spapi\Client\Model\ErrorReason
+     * @return \CrazyFactory\SpapiClient\Model\ErrorReason
      */
     public function getErrorReason()
     {
@@ -247,7 +247,7 @@ class InvalidASIN implements ModelInterface, ArrayAccess
     /**
      * Sets error_reason
      *
-     * @param \CrazyFactory\Spapi\Client\Model\ErrorReason $error_reason The reason that the ASIN is invalid.
+     * @param \CrazyFactory\SpapiClient\Model\ErrorReason $error_reason The reason that the ASIN is invalid.
      *
      * @return $this
      */
