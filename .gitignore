@@ -13,7 +13,6 @@
 *.local.php
 *.local.ini
 *.env
-composer.lock
 composer.phar
 
 # packages
