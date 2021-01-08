@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace CrazyFactory\Spapi\Client;
 
 /**
  * InboundShipmentInfoTest Class Doc Comment
  *
  * @category    Class
  * @description Information about the seller&#39;s inbound shipments. Returned by the listInboundShipments operation.
- * @package     Swagger\Client
+ * @package     CrazyFactory\Spapi\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

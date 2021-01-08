@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace CrazyFactory\Spapi\Client;
 
 /**
  * SKUInboundGuidanceTest Class Doc Comment
  *
  * @category    Class
  * @description Reasons why a given seller SKU is not recommended for shipment to Amazon&#39;s fulfillment network.
- * @package     Swagger\Client
+ * @package     CrazyFactory\Spapi\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

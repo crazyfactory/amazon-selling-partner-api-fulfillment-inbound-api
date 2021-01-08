@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace CrazyFactory\Spapi\Client;
 
 /**
  * SellerFreightClassTest Class Doc Comment
  *
  * @category    Class
  * @description The freight class of the shipment. For information about determining the freight class, contact the carrier.
- * @package     Swagger\Client
+ * @package     CrazyFactory\Spapi\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * GetTransportDetailsResult Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class GetTransportDetailsResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'transport_content' => '\Swagger\Client\Model\TransportContent'
+        'transport_content' => '\CrazyFactory\Spapi\Client\Model\TransportContent'
     ];
 
     /**
@@ -207,7 +207,7 @@ class GetTransportDetailsResult implements ModelInterface, ArrayAccess
     /**
      * Gets transport_content
      *
-     * @return \Swagger\Client\Model\TransportContent
+     * @return \CrazyFactory\Spapi\Client\Model\TransportContent
      */
     public function getTransportContent()
     {
@@ -217,7 +217,7 @@ class GetTransportDetailsResult implements ModelInterface, ArrayAccess
     /**
      * Sets transport_content
      *
-     * @param \Swagger\Client\Model\TransportContent $transport_content transport_content
+     * @param \CrazyFactory\Spapi\Client\Model\TransportContent $transport_content transport_content
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * TransportHeader Class Doc Comment
  *
  * @category Class
  * @description The shipping identifier, information about whether the shipment is by an Amazon-partnered carrier, and information about whether the shipment is Small Parcel or Less Than Truckload/Full Truckload (LTL/FTL).
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class TransportHeader implements ModelInterface, ArrayAccess
         'seller_id' => 'string',
         'shipment_id' => 'string',
         'is_partnered' => 'bool',
-        'shipment_type' => '\Swagger\Client\Model\ShipmentType'
+        'shipment_type' => '\CrazyFactory\Spapi\Client\Model\ShipmentType'
     ];
 
     /**
@@ -310,7 +310,7 @@ class TransportHeader implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_type
      *
-     * @return \Swagger\Client\Model\ShipmentType
+     * @return \CrazyFactory\Spapi\Client\Model\ShipmentType
      */
     public function getShipmentType()
     {
@@ -320,7 +320,7 @@ class TransportHeader implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_type
      *
-     * @param \Swagger\Client\Model\ShipmentType $shipment_type shipment_type
+     * @param \CrazyFactory\Spapi\Client\Model\ShipmentType $shipment_type shipment_type
      *
      * @return $this
      */

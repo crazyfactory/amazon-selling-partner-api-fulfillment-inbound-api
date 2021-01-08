@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * CreateInboundShipmentPlanResult Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class CreateInboundShipmentPlanResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'inbound_shipment_plans' => '\Swagger\Client\Model\InboundShipmentPlanList'
+        'inbound_shipment_plans' => '\CrazyFactory\Spapi\Client\Model\InboundShipmentPlanList'
     ];
 
     /**
@@ -207,7 +207,7 @@ class CreateInboundShipmentPlanResult implements ModelInterface, ArrayAccess
     /**
      * Gets inbound_shipment_plans
      *
-     * @return \Swagger\Client\Model\InboundShipmentPlanList
+     * @return \CrazyFactory\Spapi\Client\Model\InboundShipmentPlanList
      */
     public function getInboundShipmentPlans()
     {
@@ -217,7 +217,7 @@ class CreateInboundShipmentPlanResult implements ModelInterface, ArrayAccess
     /**
      * Sets inbound_shipment_plans
      *
-     * @param \Swagger\Client\Model\InboundShipmentPlanList $inbound_shipment_plans inbound_shipment_plans
+     * @param \CrazyFactory\Spapi\Client\Model\InboundShipmentPlanList $inbound_shipment_plans inbound_shipment_plans
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * InboundShipmentRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for an inbound shipment.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class InboundShipmentRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'inbound_shipment_header' => '\Swagger\Client\Model\InboundShipmentHeader',
-        'inbound_shipment_items' => '\Swagger\Client\Model\InboundShipmentItemList',
+        'inbound_shipment_header' => '\CrazyFactory\Spapi\Client\Model\InboundShipmentHeader',
+        'inbound_shipment_items' => '\CrazyFactory\Spapi\Client\Model\InboundShipmentItemList',
         'marketplace_id' => 'string'
     ];
 
@@ -229,7 +229,7 @@ class InboundShipmentRequest implements ModelInterface, ArrayAccess
     /**
      * Gets inbound_shipment_header
      *
-     * @return \Swagger\Client\Model\InboundShipmentHeader
+     * @return \CrazyFactory\Spapi\Client\Model\InboundShipmentHeader
      */
     public function getInboundShipmentHeader()
     {
@@ -239,7 +239,7 @@ class InboundShipmentRequest implements ModelInterface, ArrayAccess
     /**
      * Sets inbound_shipment_header
      *
-     * @param \Swagger\Client\Model\InboundShipmentHeader $inbound_shipment_header inbound_shipment_header
+     * @param \CrazyFactory\Spapi\Client\Model\InboundShipmentHeader $inbound_shipment_header inbound_shipment_header
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class InboundShipmentRequest implements ModelInterface, ArrayAccess
     /**
      * Gets inbound_shipment_items
      *
-     * @return \Swagger\Client\Model\InboundShipmentItemList
+     * @return \CrazyFactory\Spapi\Client\Model\InboundShipmentItemList
      */
     public function getInboundShipmentItems()
     {
@@ -263,7 +263,7 @@ class InboundShipmentRequest implements ModelInterface, ArrayAccess
     /**
      * Sets inbound_shipment_items
      *
-     * @param \Swagger\Client\Model\InboundShipmentItemList $inbound_shipment_items inbound_shipment_items
+     * @param \CrazyFactory\Spapi\Client\Model\InboundShipmentItemList $inbound_shipment_items inbound_shipment_items
      *
      * @return $this
      */

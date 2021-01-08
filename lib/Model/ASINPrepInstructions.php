@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * ASINPrepInstructions Class Doc Comment
  *
  * @category Class
  * @description Item preparation instructions to help with item sourcing decisions.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'asin' => 'string',
-        'barcode_instruction' => '\Swagger\Client\Model\BarcodeInstruction',
-        'prep_guidance' => '\Swagger\Client\Model\PrepGuidance',
-        'prep_instruction_list' => '\Swagger\Client\Model\PrepInstructionList'
+        'barcode_instruction' => '\CrazyFactory\Spapi\Client\Model\BarcodeInstruction',
+        'prep_guidance' => '\CrazyFactory\Spapi\Client\Model\PrepGuidance',
+        'prep_instruction_list' => '\CrazyFactory\Spapi\Client\Model\PrepInstructionList'
     ];
 
     /**
@@ -250,7 +250,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets barcode_instruction
      *
-     * @return \Swagger\Client\Model\BarcodeInstruction
+     * @return \CrazyFactory\Spapi\Client\Model\BarcodeInstruction
      */
     public function getBarcodeInstruction()
     {
@@ -260,7 +260,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets barcode_instruction
      *
-     * @param \Swagger\Client\Model\BarcodeInstruction $barcode_instruction barcode_instruction
+     * @param \CrazyFactory\Spapi\Client\Model\BarcodeInstruction $barcode_instruction barcode_instruction
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets prep_guidance
      *
-     * @return \Swagger\Client\Model\PrepGuidance
+     * @return \CrazyFactory\Spapi\Client\Model\PrepGuidance
      */
     public function getPrepGuidance()
     {
@@ -284,7 +284,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets prep_guidance
      *
-     * @param \Swagger\Client\Model\PrepGuidance $prep_guidance prep_guidance
+     * @param \CrazyFactory\Spapi\Client\Model\PrepGuidance $prep_guidance prep_guidance
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets prep_instruction_list
      *
-     * @return \Swagger\Client\Model\PrepInstructionList
+     * @return \CrazyFactory\Spapi\Client\Model\PrepInstructionList
      */
     public function getPrepInstructionList()
     {
@@ -308,7 +308,7 @@ class ASINPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets prep_instruction_list
      *
-     * @param \Swagger\Client\Model\PrepInstructionList $prep_instruction_list prep_instruction_list
+     * @param \CrazyFactory\Spapi\Client\Model\PrepInstructionList $prep_instruction_list prep_instruction_list
      *
      * @return $this
      */

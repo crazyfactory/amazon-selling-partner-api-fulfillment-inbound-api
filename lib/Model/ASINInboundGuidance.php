@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * ASINInboundGuidance Class Doc Comment
  *
  * @category Class
  * @description Reasons why a given ASIN is not recommended for shipment to Amazon&#39;s fulfillment network.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class ASINInboundGuidance implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'asin' => 'string',
-        'inbound_guidance' => '\Swagger\Client\Model\InboundGuidance',
-        'guidance_reason_list' => '\Swagger\Client\Model\GuidanceReasonList'
+        'inbound_guidance' => '\CrazyFactory\Spapi\Client\Model\InboundGuidance',
+        'guidance_reason_list' => '\CrazyFactory\Spapi\Client\Model\GuidanceReasonList'
     ];
 
     /**
@@ -250,7 +250,7 @@ class ASINInboundGuidance implements ModelInterface, ArrayAccess
     /**
      * Gets inbound_guidance
      *
-     * @return \Swagger\Client\Model\InboundGuidance
+     * @return \CrazyFactory\Spapi\Client\Model\InboundGuidance
      */
     public function getInboundGuidance()
     {
@@ -260,7 +260,7 @@ class ASINInboundGuidance implements ModelInterface, ArrayAccess
     /**
      * Sets inbound_guidance
      *
-     * @param \Swagger\Client\Model\InboundGuidance $inbound_guidance inbound_guidance
+     * @param \CrazyFactory\Spapi\Client\Model\InboundGuidance $inbound_guidance inbound_guidance
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class ASINInboundGuidance implements ModelInterface, ArrayAccess
     /**
      * Gets guidance_reason_list
      *
-     * @return \Swagger\Client\Model\GuidanceReasonList
+     * @return \CrazyFactory\Spapi\Client\Model\GuidanceReasonList
      */
     public function getGuidanceReasonList()
     {
@@ -284,7 +284,7 @@ class ASINInboundGuidance implements ModelInterface, ArrayAccess
     /**
      * Sets guidance_reason_list
      *
-     * @param \Swagger\Client\Model\GuidanceReasonList $guidance_reason_list A list of reasons for the current inbound guidance for this item.
+     * @param \CrazyFactory\Spapi\Client\Model\GuidanceReasonList $guidance_reason_list A list of reasons for the current inbound guidance for this item.
      *
      * @return $this
      */

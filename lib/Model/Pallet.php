@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * Pallet Class Doc Comment
  *
  * @category Class
  * @description Pallet information.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class Pallet implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'dimensions' => '\Swagger\Client\Model\Dimensions',
-        'weight' => '\Swagger\Client\Model\Weight',
+        'dimensions' => '\CrazyFactory\Spapi\Client\Model\Dimensions',
+        'weight' => '\CrazyFactory\Spapi\Client\Model\Weight',
         'is_stacked' => 'bool'
     ];
 
@@ -226,7 +226,7 @@ class Pallet implements ModelInterface, ArrayAccess
     /**
      * Gets dimensions
      *
-     * @return \Swagger\Client\Model\Dimensions
+     * @return \CrazyFactory\Spapi\Client\Model\Dimensions
      */
     public function getDimensions()
     {
@@ -236,7 +236,7 @@ class Pallet implements ModelInterface, ArrayAccess
     /**
      * Sets dimensions
      *
-     * @param \Swagger\Client\Model\Dimensions $dimensions The dimensions of the pallet. Length and width must be 40 inches by 48 inches. Height must be less than or equal to 60 inches.
+     * @param \CrazyFactory\Spapi\Client\Model\Dimensions $dimensions The dimensions of the pallet. Length and width must be 40 inches by 48 inches. Height must be less than or equal to 60 inches.
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class Pallet implements ModelInterface, ArrayAccess
     /**
      * Gets weight
      *
-     * @return \Swagger\Client\Model\Weight
+     * @return \CrazyFactory\Spapi\Client\Model\Weight
      */
     public function getWeight()
     {
@@ -260,7 +260,7 @@ class Pallet implements ModelInterface, ArrayAccess
     /**
      * Sets weight
      *
-     * @param \Swagger\Client\Model\Weight $weight The weight of the pallet.
+     * @param \CrazyFactory\Spapi\Client\Model\Weight $weight The weight of the pallet.
      *
      * @return $this
      */

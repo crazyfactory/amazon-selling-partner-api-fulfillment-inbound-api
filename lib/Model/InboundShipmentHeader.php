@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * InboundShipmentHeader Class Doc Comment
  *
  * @category Class
  * @description Inbound shipment information used to create and update inbound shipments.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,12 +59,12 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'shipment_name' => 'string',
-        'ship_from_address' => '\Swagger\Client\Model\Address',
+        'ship_from_address' => '\CrazyFactory\Spapi\Client\Model\Address',
         'destination_fulfillment_center_id' => 'string',
         'are_cases_required' => 'bool',
-        'shipment_status' => '\Swagger\Client\Model\ShipmentStatus',
-        'label_prep_preference' => '\Swagger\Client\Model\LabelPrepPreference',
-        'intended_box_contents_source' => '\Swagger\Client\Model\IntendedBoxContentsSource'
+        'shipment_status' => '\CrazyFactory\Spapi\Client\Model\ShipmentStatus',
+        'label_prep_preference' => '\CrazyFactory\Spapi\Client\Model\LabelPrepPreference',
+        'intended_box_contents_source' => '\CrazyFactory\Spapi\Client\Model\IntendedBoxContentsSource'
     ];
 
     /**
@@ -283,7 +283,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Gets ship_from_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \CrazyFactory\Spapi\Client\Model\Address
      */
     public function getShipFromAddress()
     {
@@ -293,7 +293,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Sets ship_from_address
      *
-     * @param \Swagger\Client\Model\Address $ship_from_address The return address.
+     * @param \CrazyFactory\Spapi\Client\Model\Address $ship_from_address The return address.
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_status
      *
-     * @return \Swagger\Client\Model\ShipmentStatus
+     * @return \CrazyFactory\Spapi\Client\Model\ShipmentStatus
      */
     public function getShipmentStatus()
     {
@@ -365,7 +365,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_status
      *
-     * @param \Swagger\Client\Model\ShipmentStatus $shipment_status shipment_status
+     * @param \CrazyFactory\Spapi\Client\Model\ShipmentStatus $shipment_status shipment_status
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Gets label_prep_preference
      *
-     * @return \Swagger\Client\Model\LabelPrepPreference
+     * @return \CrazyFactory\Spapi\Client\Model\LabelPrepPreference
      */
     public function getLabelPrepPreference()
     {
@@ -389,7 +389,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Sets label_prep_preference
      *
-     * @param \Swagger\Client\Model\LabelPrepPreference $label_prep_preference The preference for label preparation for an inbound shipment.
+     * @param \CrazyFactory\Spapi\Client\Model\LabelPrepPreference $label_prep_preference The preference for label preparation for an inbound shipment.
      *
      * @return $this
      */
@@ -403,7 +403,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Gets intended_box_contents_source
      *
-     * @return \Swagger\Client\Model\IntendedBoxContentsSource
+     * @return \CrazyFactory\Spapi\Client\Model\IntendedBoxContentsSource
      */
     public function getIntendedBoxContentsSource()
     {
@@ -413,7 +413,7 @@ class InboundShipmentHeader implements ModelInterface, ArrayAccess
     /**
      * Sets intended_box_contents_source
      *
-     * @param \Swagger\Client\Model\IntendedBoxContentsSource $intended_box_contents_source intended_box_contents_source
+     * @param \CrazyFactory\Spapi\Client\Model\IntendedBoxContentsSource $intended_box_contents_source intended_box_contents_source
      *
      * @return $this
      */

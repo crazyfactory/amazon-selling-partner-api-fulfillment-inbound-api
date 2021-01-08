@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **seller_sku** | **string** | The seller SKU of the item. | 
 **asin** | **string** | The Amazon Standard Identification Number (ASIN) of the item. | 
-**inbound_guidance** | [**\Swagger\Client\Model\InboundGuidance**](InboundGuidance.md) | Specific inbound guidance for an item. | 
-**guidance_reason_list** | [**\Swagger\Client\Model\GuidanceReasonList**](GuidanceReasonList.md) | A list of reasons for the current inbound guidance for this item. | [optional] 
+**inbound_guidance** | [**\CrazyFactory\Spapi\Client\Model\InboundGuidance**](InboundGuidance.md) | Specific inbound guidance for an item. | 
+**guidance_reason_list** | [**\CrazyFactory\Spapi\Client\Model\GuidanceReasonList**](GuidanceReasonList.md) | A list of reasons for the current inbound guidance for this item. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

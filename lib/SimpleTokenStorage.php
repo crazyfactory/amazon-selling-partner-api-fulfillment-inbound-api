@@ -1,5 +1,5 @@
 <?php
-namespace CrazyFactory\Spapi;
+namespace CrazyFactory\Spapi\Client;
 use CrazyFactory\Spapi\TokenStorageInterface;
 
 class SimpleTokenStorage implements TokenStorageInterface {

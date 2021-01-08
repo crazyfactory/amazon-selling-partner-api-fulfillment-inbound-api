@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * SKUPrepInstructions Class Doc Comment
  *
  * @category Class
  * @description Labeling requirements and item preparation instructions to help you prepare items for shipment to Amazon&#39;s fulfillment network.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,10 +60,10 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
-        'barcode_instruction' => '\Swagger\Client\Model\BarcodeInstruction',
-        'prep_guidance' => '\Swagger\Client\Model\PrepGuidance',
-        'prep_instruction_list' => '\Swagger\Client\Model\PrepInstructionList',
-        'amazon_prep_fees_details_list' => '\Swagger\Client\Model\AmazonPrepFeesDetailsList'
+        'barcode_instruction' => '\CrazyFactory\Spapi\Client\Model\BarcodeInstruction',
+        'prep_guidance' => '\CrazyFactory\Spapi\Client\Model\PrepGuidance',
+        'prep_instruction_list' => '\CrazyFactory\Spapi\Client\Model\PrepInstructionList',
+        'amazon_prep_fees_details_list' => '\CrazyFactory\Spapi\Client\Model\AmazonPrepFeesDetailsList'
     ];
 
     /**
@@ -286,7 +286,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets barcode_instruction
      *
-     * @return \Swagger\Client\Model\BarcodeInstruction
+     * @return \CrazyFactory\Spapi\Client\Model\BarcodeInstruction
      */
     public function getBarcodeInstruction()
     {
@@ -296,7 +296,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets barcode_instruction
      *
-     * @param \Swagger\Client\Model\BarcodeInstruction $barcode_instruction barcode_instruction
+     * @param \CrazyFactory\Spapi\Client\Model\BarcodeInstruction $barcode_instruction barcode_instruction
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets prep_guidance
      *
-     * @return \Swagger\Client\Model\PrepGuidance
+     * @return \CrazyFactory\Spapi\Client\Model\PrepGuidance
      */
     public function getPrepGuidance()
     {
@@ -320,7 +320,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets prep_guidance
      *
-     * @param \Swagger\Client\Model\PrepGuidance $prep_guidance prep_guidance
+     * @param \CrazyFactory\Spapi\Client\Model\PrepGuidance $prep_guidance prep_guidance
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets prep_instruction_list
      *
-     * @return \Swagger\Client\Model\PrepInstructionList
+     * @return \CrazyFactory\Spapi\Client\Model\PrepInstructionList
      */
     public function getPrepInstructionList()
     {
@@ -344,7 +344,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets prep_instruction_list
      *
-     * @param \Swagger\Client\Model\PrepInstructionList $prep_instruction_list prep_instruction_list
+     * @param \CrazyFactory\Spapi\Client\Model\PrepInstructionList $prep_instruction_list prep_instruction_list
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Gets amazon_prep_fees_details_list
      *
-     * @return \Swagger\Client\Model\AmazonPrepFeesDetailsList
+     * @return \CrazyFactory\Spapi\Client\Model\AmazonPrepFeesDetailsList
      */
     public function getAmazonPrepFeesDetailsList()
     {
@@ -368,7 +368,7 @@ class SKUPrepInstructions implements ModelInterface, ArrayAccess
     /**
      * Sets amazon_prep_fees_details_list
      *
-     * @param \Swagger\Client\Model\AmazonPrepFeesDetailsList $amazon_prep_fees_details_list amazon_prep_fees_details_list
+     * @param \CrazyFactory\Spapi\Client\Model\AmazonPrepFeesDetailsList $amazon_prep_fees_details_list amazon_prep_fees_details_list
      *
      * @return $this
      */

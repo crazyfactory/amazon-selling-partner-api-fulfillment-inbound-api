@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * InboundShipmentItem Class Doc Comment
  *
  * @category Class
  * @description Item information for an inbound shipment. Submitted with a call to the createInboundShipment or updateInboundShipment operation.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,11 +61,11 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
         'shipment_id' => 'string',
         'seller_sku' => 'string',
         'fulfillment_network_sku' => 'string',
-        'quantity_shipped' => '\Swagger\Client\Model\Quantity',
-        'quantity_received' => '\Swagger\Client\Model\Quantity',
-        'quantity_in_case' => '\Swagger\Client\Model\Quantity',
-        'release_date' => '\Swagger\Client\Model\DateStringType',
-        'prep_details_list' => '\Swagger\Client\Model\PrepDetailsList'
+        'quantity_shipped' => '\CrazyFactory\Spapi\Client\Model\Quantity',
+        'quantity_received' => '\CrazyFactory\Spapi\Client\Model\Quantity',
+        'quantity_in_case' => '\CrazyFactory\Spapi\Client\Model\Quantity',
+        'release_date' => '\CrazyFactory\Spapi\Client\Model\DateStringType',
+        'prep_details_list' => '\CrazyFactory\Spapi\Client\Model\PrepDetailsList'
     ];
 
     /**
@@ -328,7 +328,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity_shipped
      *
-     * @return \Swagger\Client\Model\Quantity
+     * @return \CrazyFactory\Spapi\Client\Model\Quantity
      */
     public function getQuantityShipped()
     {
@@ -338,7 +338,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity_shipped
      *
-     * @param \Swagger\Client\Model\Quantity $quantity_shipped The item quantity that you are shipping.
+     * @param \CrazyFactory\Spapi\Client\Model\Quantity $quantity_shipped The item quantity that you are shipping.
      *
      * @return $this
      */
@@ -352,7 +352,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity_received
      *
-     * @return \Swagger\Client\Model\Quantity
+     * @return \CrazyFactory\Spapi\Client\Model\Quantity
      */
     public function getQuantityReceived()
     {
@@ -362,7 +362,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity_received
      *
-     * @param \Swagger\Client\Model\Quantity $quantity_received The item quantity that has been received at an Amazon fulfillment center.
+     * @param \CrazyFactory\Spapi\Client\Model\Quantity $quantity_received The item quantity that has been received at an Amazon fulfillment center.
      *
      * @return $this
      */
@@ -376,7 +376,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity_in_case
      *
-     * @return \Swagger\Client\Model\Quantity
+     * @return \CrazyFactory\Spapi\Client\Model\Quantity
      */
     public function getQuantityInCase()
     {
@@ -386,7 +386,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity_in_case
      *
-     * @param \Swagger\Client\Model\Quantity $quantity_in_case The item quantity in each case, for case-packed items. Note that QuantityInCase multiplied by the number of boxes in the inbound shipment equals QuantityShipped. Also note that all of the boxes of an inbound shipment must either be case packed or individually packed. For that reason, when you submit the createInboundShipment or the updateInboundShipment operation, the value of QuantityInCase must be provided for every item in the shipment or for none of the items in the shipment.
+     * @param \CrazyFactory\Spapi\Client\Model\Quantity $quantity_in_case The item quantity in each case, for case-packed items. Note that QuantityInCase multiplied by the number of boxes in the inbound shipment equals QuantityShipped. Also note that all of the boxes of an inbound shipment must either be case packed or individually packed. For that reason, when you submit the createInboundShipment or the updateInboundShipment operation, the value of QuantityInCase must be provided for every item in the shipment or for none of the items in the shipment.
      *
      * @return $this
      */
@@ -400,7 +400,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Gets release_date
      *
-     * @return \Swagger\Client\Model\DateStringType
+     * @return \CrazyFactory\Spapi\Client\Model\DateStringType
      */
     public function getReleaseDate()
     {
@@ -410,7 +410,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Sets release_date
      *
-     * @param \Swagger\Client\Model\DateStringType $release_date The date that a pre-order item will be available for sale.
+     * @param \CrazyFactory\Spapi\Client\Model\DateStringType $release_date The date that a pre-order item will be available for sale.
      *
      * @return $this
      */
@@ -424,7 +424,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Gets prep_details_list
      *
-     * @return \Swagger\Client\Model\PrepDetailsList
+     * @return \CrazyFactory\Spapi\Client\Model\PrepDetailsList
      */
     public function getPrepDetailsList()
     {
@@ -434,7 +434,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Sets prep_details_list
      *
-     * @param \Swagger\Client\Model\PrepDetailsList $prep_details_list prep_details_list
+     * @param \CrazyFactory\Spapi\Client\Model\PrepDetailsList $prep_details_list prep_details_list
      *
      * @return $this
      */

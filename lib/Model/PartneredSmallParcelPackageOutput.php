@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * PartneredSmallParcelPackageOutput Class Doc Comment
  *
  * @category Class
  * @description Dimension, weight, and shipping information for the package.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class PartneredSmallParcelPackageOutput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'dimensions' => '\Swagger\Client\Model\Dimensions',
-        'weight' => '\Swagger\Client\Model\Weight',
+        'dimensions' => '\CrazyFactory\Spapi\Client\Model\Dimensions',
+        'weight' => '\CrazyFactory\Spapi\Client\Model\Weight',
         'carrier_name' => 'string',
-        'tracking_id' => '\Swagger\Client\Model\TrackingId',
-        'package_status' => '\Swagger\Client\Model\PackageStatus'
+        'tracking_id' => '\CrazyFactory\Spapi\Client\Model\TrackingId',
+        'package_status' => '\CrazyFactory\Spapi\Client\Model\PackageStatus'
     ];
 
     /**
@@ -247,7 +247,7 @@ class PartneredSmallParcelPackageOutput implements ModelInterface, ArrayAccess
     /**
      * Gets dimensions
      *
-     * @return \Swagger\Client\Model\Dimensions
+     * @return \CrazyFactory\Spapi\Client\Model\Dimensions
      */
     public function getDimensions()
     {
@@ -257,7 +257,7 @@ class PartneredSmallParcelPackageOutput implements ModelInterface, ArrayAccess
     /**
      * Sets dimensions
      *
-     * @param \Swagger\Client\Model\Dimensions $dimensions dimensions
+     * @param \CrazyFactory\Spapi\Client\Model\Dimensions $dimensions dimensions
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class PartneredSmallParcelPackageOutput implements ModelInterface, ArrayAccess
     /**
      * Gets weight
      *
-     * @return \Swagger\Client\Model\Weight
+     * @return \CrazyFactory\Spapi\Client\Model\Weight
      */
     public function getWeight()
     {
@@ -281,7 +281,7 @@ class PartneredSmallParcelPackageOutput implements ModelInterface, ArrayAccess
     /**
      * Sets weight
      *
-     * @param \Swagger\Client\Model\Weight $weight weight
+     * @param \CrazyFactory\Spapi\Client\Model\Weight $weight weight
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class PartneredSmallParcelPackageOutput implements ModelInterface, ArrayAccess
     /**
      * Gets tracking_id
      *
-     * @return \Swagger\Client\Model\TrackingId
+     * @return \CrazyFactory\Spapi\Client\Model\TrackingId
      */
     public function getTrackingId()
     {
@@ -329,7 +329,7 @@ class PartneredSmallParcelPackageOutput implements ModelInterface, ArrayAccess
     /**
      * Sets tracking_id
      *
-     * @param \Swagger\Client\Model\TrackingId $tracking_id tracking_id
+     * @param \CrazyFactory\Spapi\Client\Model\TrackingId $tracking_id tracking_id
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class PartneredSmallParcelPackageOutput implements ModelInterface, ArrayAccess
     /**
      * Gets package_status
      *
-     * @return \Swagger\Client\Model\PackageStatus
+     * @return \CrazyFactory\Spapi\Client\Model\PackageStatus
      */
     public function getPackageStatus()
     {
@@ -353,7 +353,7 @@ class PartneredSmallParcelPackageOutput implements ModelInterface, ArrayAccess
     /**
      * Sets package_status
      *
-     * @param \Swagger\Client\Model\PackageStatus $package_status package_status
+     * @param \CrazyFactory\Spapi\Client\Model\PackageStatus $package_status package_status
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * Dimensions Class Doc Comment
  *
  * @category Class
  * @description The dimension values and unit of measurement.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class Dimensions implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'length' => '\Swagger\Client\Model\BigDecimalType',
-        'width' => '\Swagger\Client\Model\BigDecimalType',
-        'height' => '\Swagger\Client\Model\BigDecimalType',
-        'unit' => '\Swagger\Client\Model\UnitOfMeasurement'
+        'length' => '\CrazyFactory\Spapi\Client\Model\BigDecimalType',
+        'width' => '\CrazyFactory\Spapi\Client\Model\BigDecimalType',
+        'height' => '\CrazyFactory\Spapi\Client\Model\BigDecimalType',
+        'unit' => '\CrazyFactory\Spapi\Client\Model\UnitOfMeasurement'
     ];
 
     /**
@@ -238,7 +238,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Gets length
      *
-     * @return \Swagger\Client\Model\BigDecimalType
+     * @return \CrazyFactory\Spapi\Client\Model\BigDecimalType
      */
     public function getLength()
     {
@@ -248,7 +248,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Sets length
      *
-     * @param \Swagger\Client\Model\BigDecimalType $length The length dimension.
+     * @param \CrazyFactory\Spapi\Client\Model\BigDecimalType $length The length dimension.
      *
      * @return $this
      */
@@ -262,7 +262,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return \Swagger\Client\Model\BigDecimalType
+     * @return \CrazyFactory\Spapi\Client\Model\BigDecimalType
      */
     public function getWidth()
     {
@@ -272,7 +272,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param \Swagger\Client\Model\BigDecimalType $width The width dimension.
+     * @param \CrazyFactory\Spapi\Client\Model\BigDecimalType $width The width dimension.
      *
      * @return $this
      */
@@ -286,7 +286,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return \Swagger\Client\Model\BigDecimalType
+     * @return \CrazyFactory\Spapi\Client\Model\BigDecimalType
      */
     public function getHeight()
     {
@@ -296,7 +296,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param \Swagger\Client\Model\BigDecimalType $height The height dimension.
+     * @param \CrazyFactory\Spapi\Client\Model\BigDecimalType $height The height dimension.
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Gets unit
      *
-     * @return \Swagger\Client\Model\UnitOfMeasurement
+     * @return \CrazyFactory\Spapi\Client\Model\UnitOfMeasurement
      */
     public function getUnit()
     {
@@ -320,7 +320,7 @@ class Dimensions implements ModelInterface, ArrayAccess
     /**
      * Sets unit
      *
-     * @param \Swagger\Client\Model\UnitOfMeasurement $unit The unit of measurement for the dimensions.
+     * @param \CrazyFactory\Spapi\Client\Model\UnitOfMeasurement $unit The unit of measurement for the dimensions.
      *
      * @return $this
      */

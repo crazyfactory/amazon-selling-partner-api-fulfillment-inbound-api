@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * NonPartneredSmallParcelPackageOutput Class Doc Comment
  *
  * @category Class
  * @description Carrier, tracking number, and status information for the package.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class NonPartneredSmallParcelPackageOutput implements ModelInterface, ArrayAcces
       */
     protected static $swaggerTypes = [
         'carrier_name' => 'string',
-        'tracking_id' => '\Swagger\Client\Model\TrackingId',
-        'package_status' => '\Swagger\Client\Model\PackageStatus'
+        'tracking_id' => '\CrazyFactory\Spapi\Client\Model\TrackingId',
+        'package_status' => '\CrazyFactory\Spapi\Client\Model\PackageStatus'
     ];
 
     /**
@@ -253,7 +253,7 @@ class NonPartneredSmallParcelPackageOutput implements ModelInterface, ArrayAcces
     /**
      * Gets tracking_id
      *
-     * @return \Swagger\Client\Model\TrackingId
+     * @return \CrazyFactory\Spapi\Client\Model\TrackingId
      */
     public function getTrackingId()
     {
@@ -263,7 +263,7 @@ class NonPartneredSmallParcelPackageOutput implements ModelInterface, ArrayAcces
     /**
      * Sets tracking_id
      *
-     * @param \Swagger\Client\Model\TrackingId $tracking_id tracking_id
+     * @param \CrazyFactory\Spapi\Client\Model\TrackingId $tracking_id tracking_id
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class NonPartneredSmallParcelPackageOutput implements ModelInterface, ArrayAcces
     /**
      * Gets package_status
      *
-     * @return \Swagger\Client\Model\PackageStatus
+     * @return \CrazyFactory\Spapi\Client\Model\PackageStatus
      */
     public function getPackageStatus()
     {
@@ -287,7 +287,7 @@ class NonPartneredSmallParcelPackageOutput implements ModelInterface, ArrayAcces
     /**
      * Sets package_status
      *
-     * @param \Swagger\Client\Model\PackageStatus $package_status package_status
+     * @param \CrazyFactory\Spapi\Client\Model\PackageStatus $package_status package_status
      *
      * @return $this
      */

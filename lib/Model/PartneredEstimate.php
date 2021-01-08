@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * PartneredEstimate Class Doc Comment
  *
  * @category Class
  * @description The estimated shipping cost for a shipment using an Amazon-partnered carrier.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'amount' => '\Swagger\Client\Model\Amount',
-        'confirm_deadline' => '\Swagger\Client\Model\TimeStampStringType',
-        'void_deadline' => '\Swagger\Client\Model\TimeStampStringType'
+        'amount' => '\CrazyFactory\Spapi\Client\Model\Amount',
+        'confirm_deadline' => '\CrazyFactory\Spapi\Client\Model\TimeStampStringType',
+        'void_deadline' => '\CrazyFactory\Spapi\Client\Model\TimeStampStringType'
     ];
 
     /**
@@ -223,7 +223,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return \Swagger\Client\Model\Amount
+     * @return \CrazyFactory\Spapi\Client\Model\Amount
      */
     public function getAmount()
     {
@@ -233,7 +233,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param \Swagger\Client\Model\Amount $amount The amount that the Amazon-partnered carrier will charge to ship the inbound shipment.
+     * @param \CrazyFactory\Spapi\Client\Model\Amount $amount The amount that the Amazon-partnered carrier will charge to ship the inbound shipment.
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Gets confirm_deadline
      *
-     * @return \Swagger\Client\Model\TimeStampStringType
+     * @return \CrazyFactory\Spapi\Client\Model\TimeStampStringType
      */
     public function getConfirmDeadline()
     {
@@ -257,7 +257,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Sets confirm_deadline
      *
-     * @param \Swagger\Client\Model\TimeStampStringType $confirm_deadline The date in ISO 8601 date time format by which this estimate must be confirmed. After this date the estimate is no longer valid and cannot be confirmed.  Returned only if the TransportStatus value of the inbound shipment is ESTIMATED.
+     * @param \CrazyFactory\Spapi\Client\Model\TimeStampStringType $confirm_deadline The date in ISO 8601 date time format by which this estimate must be confirmed. After this date the estimate is no longer valid and cannot be confirmed.  Returned only if the TransportStatus value of the inbound shipment is ESTIMATED.
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Gets void_deadline
      *
-     * @return \Swagger\Client\Model\TimeStampStringType
+     * @return \CrazyFactory\Spapi\Client\Model\TimeStampStringType
      */
     public function getVoidDeadline()
     {
@@ -281,7 +281,7 @@ class PartneredEstimate implements ModelInterface, ArrayAccess
     /**
      * Sets void_deadline
      *
-     * @param \Swagger\Client\Model\TimeStampStringType $void_deadline The date in ISO 8601 date time format after which a confirmed transportation request can no longer be voided. This date is 24 hours after a Small Parcel shipment transportation request is confirmed or one hour after a Less Than Truckload/Full Truckload (LTL/FTL) shipment transportation request is confirmed. After the void deadline passes the seller's account will be charged for the shipping cost.  Returned only if the TransportStatus value of the inbound shipment is CONFIRMED.
+     * @param \CrazyFactory\Spapi\Client\Model\TimeStampStringType $void_deadline The date in ISO 8601 date time format after which a confirmed transportation request can no longer be voided. This date is 24 hours after a Small Parcel shipment transportation request is confirmed or one hour after a Less Than Truckload/Full Truckload (LTL/FTL) shipment transportation request is confirmed. After the void deadline passes the seller's account will be charged for the shipping cost.  Returned only if the TransportStatus value of the inbound shipment is CONFIRMED.
      *
      * @return $this
      */

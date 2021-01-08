@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * TransportDetailInput Class Doc Comment
  *
  * @category Class
  * @description Information required to create an Amazon-partnered carrier shipping estimate, or to alert the Amazon fulfillment center to the arrival of an inbound shipment by a non-Amazon-partnered carrier.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class TransportDetailInput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'partnered_small_parcel_data' => '\Swagger\Client\Model\PartneredSmallParcelDataInput',
-        'non_partnered_small_parcel_data' => '\Swagger\Client\Model\NonPartneredSmallParcelDataInput',
-        'partnered_ltl_data' => '\Swagger\Client\Model\PartneredLtlDataInput',
-        'non_partnered_ltl_data' => '\Swagger\Client\Model\NonPartneredLtlDataInput'
+        'partnered_small_parcel_data' => '\CrazyFactory\Spapi\Client\Model\PartneredSmallParcelDataInput',
+        'non_partnered_small_parcel_data' => '\CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelDataInput',
+        'partnered_ltl_data' => '\CrazyFactory\Spapi\Client\Model\PartneredLtlDataInput',
+        'non_partnered_ltl_data' => '\CrazyFactory\Spapi\Client\Model\NonPartneredLtlDataInput'
     ];
 
     /**
@@ -226,7 +226,7 @@ class TransportDetailInput implements ModelInterface, ArrayAccess
     /**
      * Gets partnered_small_parcel_data
      *
-     * @return \Swagger\Client\Model\PartneredSmallParcelDataInput
+     * @return \CrazyFactory\Spapi\Client\Model\PartneredSmallParcelDataInput
      */
     public function getPartneredSmallParcelData()
     {
@@ -236,7 +236,7 @@ class TransportDetailInput implements ModelInterface, ArrayAccess
     /**
      * Sets partnered_small_parcel_data
      *
-     * @param \Swagger\Client\Model\PartneredSmallParcelDataInput $partnered_small_parcel_data partnered_small_parcel_data
+     * @param \CrazyFactory\Spapi\Client\Model\PartneredSmallParcelDataInput $partnered_small_parcel_data partnered_small_parcel_data
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class TransportDetailInput implements ModelInterface, ArrayAccess
     /**
      * Gets non_partnered_small_parcel_data
      *
-     * @return \Swagger\Client\Model\NonPartneredSmallParcelDataInput
+     * @return \CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelDataInput
      */
     public function getNonPartneredSmallParcelData()
     {
@@ -260,7 +260,7 @@ class TransportDetailInput implements ModelInterface, ArrayAccess
     /**
      * Sets non_partnered_small_parcel_data
      *
-     * @param \Swagger\Client\Model\NonPartneredSmallParcelDataInput $non_partnered_small_parcel_data non_partnered_small_parcel_data
+     * @param \CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelDataInput $non_partnered_small_parcel_data non_partnered_small_parcel_data
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class TransportDetailInput implements ModelInterface, ArrayAccess
     /**
      * Gets partnered_ltl_data
      *
-     * @return \Swagger\Client\Model\PartneredLtlDataInput
+     * @return \CrazyFactory\Spapi\Client\Model\PartneredLtlDataInput
      */
     public function getPartneredLtlData()
     {
@@ -284,7 +284,7 @@ class TransportDetailInput implements ModelInterface, ArrayAccess
     /**
      * Sets partnered_ltl_data
      *
-     * @param \Swagger\Client\Model\PartneredLtlDataInput $partnered_ltl_data partnered_ltl_data
+     * @param \CrazyFactory\Spapi\Client\Model\PartneredLtlDataInput $partnered_ltl_data partnered_ltl_data
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class TransportDetailInput implements ModelInterface, ArrayAccess
     /**
      * Gets non_partnered_ltl_data
      *
-     * @return \Swagger\Client\Model\NonPartneredLtlDataInput
+     * @return \CrazyFactory\Spapi\Client\Model\NonPartneredLtlDataInput
      */
     public function getNonPartneredLtlData()
     {
@@ -308,7 +308,7 @@ class TransportDetailInput implements ModelInterface, ArrayAccess
     /**
      * Sets non_partnered_ltl_data
      *
-     * @param \Swagger\Client\Model\NonPartneredLtlDataInput $non_partnered_ltl_data non_partnered_ltl_data
+     * @param \CrazyFactory\Spapi\Client\Model\NonPartneredLtlDataInput $non_partnered_ltl_data non_partnered_ltl_data
      *
      * @return $this
      */

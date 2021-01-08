@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * TransportContent Class Doc Comment
  *
  * @category Class
  * @description Inbound shipment information, including carrier details, shipment status, and the workflow status for a request for shipment with an Amazon-partnered carrier.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class TransportContent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'transport_header' => '\Swagger\Client\Model\TransportHeader',
-        'transport_details' => '\Swagger\Client\Model\TransportDetailOutput',
-        'transport_result' => '\Swagger\Client\Model\TransportResult'
+        'transport_header' => '\CrazyFactory\Spapi\Client\Model\TransportHeader',
+        'transport_details' => '\CrazyFactory\Spapi\Client\Model\TransportDetailOutput',
+        'transport_result' => '\CrazyFactory\Spapi\Client\Model\TransportResult'
     ];
 
     /**
@@ -229,7 +229,7 @@ class TransportContent implements ModelInterface, ArrayAccess
     /**
      * Gets transport_header
      *
-     * @return \Swagger\Client\Model\TransportHeader
+     * @return \CrazyFactory\Spapi\Client\Model\TransportHeader
      */
     public function getTransportHeader()
     {
@@ -239,7 +239,7 @@ class TransportContent implements ModelInterface, ArrayAccess
     /**
      * Sets transport_header
      *
-     * @param \Swagger\Client\Model\TransportHeader $transport_header transport_header
+     * @param \CrazyFactory\Spapi\Client\Model\TransportHeader $transport_header transport_header
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class TransportContent implements ModelInterface, ArrayAccess
     /**
      * Gets transport_details
      *
-     * @return \Swagger\Client\Model\TransportDetailOutput
+     * @return \CrazyFactory\Spapi\Client\Model\TransportDetailOutput
      */
     public function getTransportDetails()
     {
@@ -263,7 +263,7 @@ class TransportContent implements ModelInterface, ArrayAccess
     /**
      * Sets transport_details
      *
-     * @param \Swagger\Client\Model\TransportDetailOutput $transport_details transport_details
+     * @param \CrazyFactory\Spapi\Client\Model\TransportDetailOutput $transport_details transport_details
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class TransportContent implements ModelInterface, ArrayAccess
     /**
      * Gets transport_result
      *
-     * @return \Swagger\Client\Model\TransportResult
+     * @return \CrazyFactory\Spapi\Client\Model\TransportResult
      */
     public function getTransportResult()
     {
@@ -287,7 +287,7 @@ class TransportContent implements ModelInterface, ArrayAccess
     /**
      * Sets transport_result
      *
-     * @param \Swagger\Client\Model\TransportResult $transport_result transport_result
+     * @param \CrazyFactory\Spapi\Client\Model\TransportResult $transport_result transport_result
      *
      * @return $this
      */

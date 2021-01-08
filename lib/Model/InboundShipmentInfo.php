@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * InboundShipmentInfo Class Doc Comment
  *
  * @category Class
  * @description Information about the seller&#39;s inbound shipments. Returned by the listInboundShipments operation.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,14 +60,14 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'shipment_id' => 'string',
         'shipment_name' => 'string',
-        'ship_from_address' => '\Swagger\Client\Model\Address',
+        'ship_from_address' => '\CrazyFactory\Spapi\Client\Model\Address',
         'destination_fulfillment_center_id' => 'string',
-        'shipment_status' => '\Swagger\Client\Model\ShipmentStatus',
-        'label_prep_type' => '\Swagger\Client\Model\LabelPrepType',
+        'shipment_status' => '\CrazyFactory\Spapi\Client\Model\ShipmentStatus',
+        'label_prep_type' => '\CrazyFactory\Spapi\Client\Model\LabelPrepType',
         'are_cases_required' => 'bool',
-        'confirmed_need_by_date' => '\Swagger\Client\Model\DateStringType',
-        'box_contents_source' => '\Swagger\Client\Model\BoxContentsSource',
-        'estimated_box_contents_fee' => '\Swagger\Client\Model\BoxContentsFeeDetails'
+        'confirmed_need_by_date' => '\CrazyFactory\Spapi\Client\Model\DateStringType',
+        'box_contents_source' => '\CrazyFactory\Spapi\Client\Model\BoxContentsSource',
+        'estimated_box_contents_fee' => '\CrazyFactory\Spapi\Client\Model\BoxContentsFeeDetails'
     ];
 
     /**
@@ -316,7 +316,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Gets ship_from_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \CrazyFactory\Spapi\Client\Model\Address
      */
     public function getShipFromAddress()
     {
@@ -326,7 +326,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Sets ship_from_address
      *
-     * @param \Swagger\Client\Model\Address $ship_from_address The return address.
+     * @param \CrazyFactory\Spapi\Client\Model\Address $ship_from_address The return address.
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_status
      *
-     * @return \Swagger\Client\Model\ShipmentStatus
+     * @return \CrazyFactory\Spapi\Client\Model\ShipmentStatus
      */
     public function getShipmentStatus()
     {
@@ -374,7 +374,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_status
      *
-     * @param \Swagger\Client\Model\ShipmentStatus $shipment_status shipment_status
+     * @param \CrazyFactory\Spapi\Client\Model\ShipmentStatus $shipment_status shipment_status
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Gets label_prep_type
      *
-     * @return \Swagger\Client\Model\LabelPrepType
+     * @return \CrazyFactory\Spapi\Client\Model\LabelPrepType
      */
     public function getLabelPrepType()
     {
@@ -398,7 +398,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Sets label_prep_type
      *
-     * @param \Swagger\Client\Model\LabelPrepType $label_prep_type label_prep_type
+     * @param \CrazyFactory\Spapi\Client\Model\LabelPrepType $label_prep_type label_prep_type
      *
      * @return $this
      */
@@ -436,7 +436,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Gets confirmed_need_by_date
      *
-     * @return \Swagger\Client\Model\DateStringType
+     * @return \CrazyFactory\Spapi\Client\Model\DateStringType
      */
     public function getConfirmedNeedByDate()
     {
@@ -446,7 +446,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Sets confirmed_need_by_date
      *
-     * @param \Swagger\Client\Model\DateStringType $confirmed_need_by_date Date by which the shipment must arrive at the Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items.
+     * @param \CrazyFactory\Spapi\Client\Model\DateStringType $confirmed_need_by_date Date by which the shipment must arrive at the Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items.
      *
      * @return $this
      */
@@ -460,7 +460,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Gets box_contents_source
      *
-     * @return \Swagger\Client\Model\BoxContentsSource
+     * @return \CrazyFactory\Spapi\Client\Model\BoxContentsSource
      */
     public function getBoxContentsSource()
     {
@@ -470,7 +470,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Sets box_contents_source
      *
-     * @param \Swagger\Client\Model\BoxContentsSource $box_contents_source box_contents_source
+     * @param \CrazyFactory\Spapi\Client\Model\BoxContentsSource $box_contents_source box_contents_source
      *
      * @return $this
      */
@@ -484,7 +484,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Gets estimated_box_contents_fee
      *
-     * @return \Swagger\Client\Model\BoxContentsFeeDetails
+     * @return \CrazyFactory\Spapi\Client\Model\BoxContentsFeeDetails
      */
     public function getEstimatedBoxContentsFee()
     {
@@ -494,7 +494,7 @@ class InboundShipmentInfo implements ModelInterface, ArrayAccess
     /**
      * Sets estimated_box_contents_fee
      *
-     * @param \Swagger\Client\Model\BoxContentsFeeDetails $estimated_box_contents_fee An estimate of the manual processing fee charged by Amazon for boxes without box content information. This is only returned when BoxContentsSource is NONE.
+     * @param \CrazyFactory\Spapi\Client\Model\BoxContentsFeeDetails $estimated_box_contents_fee An estimate of the manual processing fee charged by Amazon for boxes without box content information. This is only returned when BoxContentsSource is NONE.
      *
      * @return $this
      */

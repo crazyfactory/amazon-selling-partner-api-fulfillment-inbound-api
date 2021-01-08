@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * GetInboundGuidanceResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getInboundGuidance operation.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GetInboundGuidanceResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'payload' => '\Swagger\Client\Model\GetInboundGuidanceResult',
-        'errors' => '\Swagger\Client\Model\ErrorList'
+        'payload' => '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResult',
+        'errors' => '\CrazyFactory\Spapi\Client\Model\ErrorList'
     ];
 
     /**
@@ -214,7 +214,7 @@ class GetInboundGuidanceResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \Swagger\Client\Model\GetInboundGuidanceResult
+     * @return \CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResult
      */
     public function getPayload()
     {
@@ -224,7 +224,7 @@ class GetInboundGuidanceResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \Swagger\Client\Model\GetInboundGuidanceResult $payload The payload for the getInboundGuidance operation.
+     * @param \CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResult $payload The payload for the getInboundGuidance operation.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class GetInboundGuidanceResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ErrorList
+     * @return \CrazyFactory\Spapi\Client\Model\ErrorList
      */
     public function getErrors()
     {
@@ -248,7 +248,7 @@ class GetInboundGuidanceResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ErrorList $errors errors
+     * @param \CrazyFactory\Spapi\Client\Model\ErrorList $errors errors
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * NonPartneredSmallParcelDataOutput Class Doc Comment
  *
  * @category Class
  * @description Information returned by Amazon about a Small Parcel shipment by a carrier that has not partnered with Amazon.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class NonPartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'package_list' => '\Swagger\Client\Model\NonPartneredSmallParcelPackageOutputList'
+        'package_list' => '\CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelPackageOutputList'
     ];
 
     /**
@@ -211,7 +211,7 @@ class NonPartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Gets package_list
      *
-     * @return \Swagger\Client\Model\NonPartneredSmallParcelPackageOutputList
+     * @return \CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelPackageOutputList
      */
     public function getPackageList()
     {
@@ -221,7 +221,7 @@ class NonPartneredSmallParcelDataOutput implements ModelInterface, ArrayAccess
     /**
      * Sets package_list
      *
-     * @param \Swagger\Client\Model\NonPartneredSmallParcelPackageOutputList $package_list package_list
+     * @param \CrazyFactory\Spapi\Client\Model\NonPartneredSmallParcelPackageOutputList $package_list package_list
      *
      * @return $this
      */

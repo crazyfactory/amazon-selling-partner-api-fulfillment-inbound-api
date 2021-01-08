@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * Weight Class Doc Comment
  *
  * @category Class
  * @description The weight of the package.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class Weight implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'value' => '\Swagger\Client\Model\BigDecimalType',
-        'unit' => '\Swagger\Client\Model\UnitOfWeight'
+        'value' => '\CrazyFactory\Spapi\Client\Model\BigDecimalType',
+        'unit' => '\CrazyFactory\Spapi\Client\Model\UnitOfWeight'
     ];
 
     /**
@@ -220,7 +220,7 @@ class Weight implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return \Swagger\Client\Model\BigDecimalType
+     * @return \CrazyFactory\Spapi\Client\Model\BigDecimalType
      */
     public function getValue()
     {
@@ -230,7 +230,7 @@ class Weight implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param \Swagger\Client\Model\BigDecimalType $value The weight value.
+     * @param \CrazyFactory\Spapi\Client\Model\BigDecimalType $value The weight value.
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class Weight implements ModelInterface, ArrayAccess
     /**
      * Gets unit
      *
-     * @return \Swagger\Client\Model\UnitOfWeight
+     * @return \CrazyFactory\Spapi\Client\Model\UnitOfWeight
      */
     public function getUnit()
     {
@@ -254,7 +254,7 @@ class Weight implements ModelInterface, ArrayAccess
     /**
      * Sets unit
      *
-     * @param \Swagger\Client\Model\UnitOfWeight $unit unit
+     * @param \CrazyFactory\Spapi\Client\Model\UnitOfWeight $unit unit
      *
      * @return $this
      */

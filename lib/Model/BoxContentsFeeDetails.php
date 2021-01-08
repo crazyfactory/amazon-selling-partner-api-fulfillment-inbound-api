@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * BoxContentsFeeDetails Class Doc Comment
  *
  * @category Class
  * @description The manual processing fee per unit and total fee for a shipment.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class BoxContentsFeeDetails implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'total_units' => '\Swagger\Client\Model\Quantity',
-        'fee_per_unit' => '\Swagger\Client\Model\Amount',
-        'total_fee' => '\Swagger\Client\Model\Amount'
+        'total_units' => '\CrazyFactory\Spapi\Client\Model\Quantity',
+        'fee_per_unit' => '\CrazyFactory\Spapi\Client\Model\Amount',
+        'total_fee' => '\CrazyFactory\Spapi\Client\Model\Amount'
     ];
 
     /**
@@ -220,7 +220,7 @@ class BoxContentsFeeDetails implements ModelInterface, ArrayAccess
     /**
      * Gets total_units
      *
-     * @return \Swagger\Client\Model\Quantity
+     * @return \CrazyFactory\Spapi\Client\Model\Quantity
      */
     public function getTotalUnits()
     {
@@ -230,7 +230,7 @@ class BoxContentsFeeDetails implements ModelInterface, ArrayAccess
     /**
      * Sets total_units
      *
-     * @param \Swagger\Client\Model\Quantity $total_units The number of units to ship.
+     * @param \CrazyFactory\Spapi\Client\Model\Quantity $total_units The number of units to ship.
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class BoxContentsFeeDetails implements ModelInterface, ArrayAccess
     /**
      * Gets fee_per_unit
      *
-     * @return \Swagger\Client\Model\Amount
+     * @return \CrazyFactory\Spapi\Client\Model\Amount
      */
     public function getFeePerUnit()
     {
@@ -254,7 +254,7 @@ class BoxContentsFeeDetails implements ModelInterface, ArrayAccess
     /**
      * Sets fee_per_unit
      *
-     * @param \Swagger\Client\Model\Amount $fee_per_unit The manual processing fee per unit.
+     * @param \CrazyFactory\Spapi\Client\Model\Amount $fee_per_unit The manual processing fee per unit.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class BoxContentsFeeDetails implements ModelInterface, ArrayAccess
     /**
      * Gets total_fee
      *
-     * @return \Swagger\Client\Model\Amount
+     * @return \CrazyFactory\Spapi\Client\Model\Amount
      */
     public function getTotalFee()
     {
@@ -278,7 +278,7 @@ class BoxContentsFeeDetails implements ModelInterface, ArrayAccess
     /**
      * Sets total_fee
      *
-     * @param \Swagger\Client\Model\Amount $total_fee The total manual processing fee for the shipment.
+     * @param \CrazyFactory\Spapi\Client\Model\Amount $total_fee The total manual processing fee for the shipment.
      *
      * @return $this
      */

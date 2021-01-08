@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * GetPrepInstructionsResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getPrepInstructions operation.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GetPrepInstructionsResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'payload' => '\Swagger\Client\Model\GetPrepInstructionsResult',
-        'errors' => '\Swagger\Client\Model\ErrorList'
+        'payload' => '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResult',
+        'errors' => '\CrazyFactory\Spapi\Client\Model\ErrorList'
     ];
 
     /**
@@ -214,7 +214,7 @@ class GetPrepInstructionsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \Swagger\Client\Model\GetPrepInstructionsResult
+     * @return \CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResult
      */
     public function getPayload()
     {
@@ -224,7 +224,7 @@ class GetPrepInstructionsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \Swagger\Client\Model\GetPrepInstructionsResult $payload The payload for the getPrepInstructions operation.
+     * @param \CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResult $payload The payload for the getPrepInstructions operation.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class GetPrepInstructionsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ErrorList
+     * @return \CrazyFactory\Spapi\Client\Model\ErrorList
      */
     public function getErrors()
     {
@@ -248,7 +248,7 @@ class GetPrepInstructionsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ErrorList $errors errors
+     * @param \CrazyFactory\Spapi\Client\Model\ErrorList $errors errors
      *
      * @return $this
      */

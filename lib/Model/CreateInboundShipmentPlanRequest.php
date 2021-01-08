@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * CreateInboundShipmentPlanRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the createInboundShipmentPlan operation.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class CreateInboundShipmentPlanRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ship_from_address' => '\Swagger\Client\Model\Address',
-        'label_prep_preference' => '\Swagger\Client\Model\LabelPrepPreference',
+        'ship_from_address' => '\CrazyFactory\Spapi\Client\Model\Address',
+        'label_prep_preference' => '\CrazyFactory\Spapi\Client\Model\LabelPrepPreference',
         'ship_to_country_code' => 'string',
         'ship_to_country_subdivision_code' => 'string',
-        'inbound_shipment_plan_request_items' => '\Swagger\Client\Model\InboundShipmentPlanRequestItemList'
+        'inbound_shipment_plan_request_items' => '\CrazyFactory\Spapi\Client\Model\InboundShipmentPlanRequestItemList'
     ];
 
     /**
@@ -241,7 +241,7 @@ class CreateInboundShipmentPlanRequest implements ModelInterface, ArrayAccess
     /**
      * Gets ship_from_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \CrazyFactory\Spapi\Client\Model\Address
      */
     public function getShipFromAddress()
     {
@@ -251,7 +251,7 @@ class CreateInboundShipmentPlanRequest implements ModelInterface, ArrayAccess
     /**
      * Sets ship_from_address
      *
-     * @param \Swagger\Client\Model\Address $ship_from_address The address from which the inbound shipment will be sent.
+     * @param \CrazyFactory\Spapi\Client\Model\Address $ship_from_address The address from which the inbound shipment will be sent.
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class CreateInboundShipmentPlanRequest implements ModelInterface, ArrayAccess
     /**
      * Gets label_prep_preference
      *
-     * @return \Swagger\Client\Model\LabelPrepPreference
+     * @return \CrazyFactory\Spapi\Client\Model\LabelPrepPreference
      */
     public function getLabelPrepPreference()
     {
@@ -275,7 +275,7 @@ class CreateInboundShipmentPlanRequest implements ModelInterface, ArrayAccess
     /**
      * Sets label_prep_preference
      *
-     * @param \Swagger\Client\Model\LabelPrepPreference $label_prep_preference The seller's preference for label preparation for an inbound shipment.
+     * @param \CrazyFactory\Spapi\Client\Model\LabelPrepPreference $label_prep_preference The seller's preference for label preparation for an inbound shipment.
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class CreateInboundShipmentPlanRequest implements ModelInterface, ArrayAccess
     /**
      * Gets inbound_shipment_plan_request_items
      *
-     * @return \Swagger\Client\Model\InboundShipmentPlanRequestItemList
+     * @return \CrazyFactory\Spapi\Client\Model\InboundShipmentPlanRequestItemList
      */
     public function getInboundShipmentPlanRequestItems()
     {
@@ -347,7 +347,7 @@ class CreateInboundShipmentPlanRequest implements ModelInterface, ArrayAccess
     /**
      * Sets inbound_shipment_plan_request_items
      *
-     * @param \Swagger\Client\Model\InboundShipmentPlanRequestItemList $inbound_shipment_plan_request_items inbound_shipment_plan_request_items
+     * @param \CrazyFactory\Spapi\Client\Model\InboundShipmentPlanRequestItemList $inbound_shipment_plan_request_items inbound_shipment_plan_request_items
      *
      * @return $this
      */

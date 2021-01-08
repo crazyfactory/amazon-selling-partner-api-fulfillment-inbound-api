@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * TransportResult Class Doc Comment
  *
  * @category Class
  * @description The workflow status for a shipment with an Amazon-partnered carrier.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TransportResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'transport_status' => '\Swagger\Client\Model\TransportStatus',
+        'transport_status' => '\CrazyFactory\Spapi\Client\Model\TransportStatus',
         'error_code' => 'string',
         'error_description' => 'string'
     ];
@@ -223,7 +223,7 @@ class TransportResult implements ModelInterface, ArrayAccess
     /**
      * Gets transport_status
      *
-     * @return \Swagger\Client\Model\TransportStatus
+     * @return \CrazyFactory\Spapi\Client\Model\TransportStatus
      */
     public function getTransportStatus()
     {
@@ -233,7 +233,7 @@ class TransportResult implements ModelInterface, ArrayAccess
     /**
      * Sets transport_status
      *
-     * @param \Swagger\Client\Model\TransportStatus $transport_status transport_status
+     * @param \CrazyFactory\Spapi\Client\Model\TransportStatus $transport_status transport_status
      *
      * @return $this
      */

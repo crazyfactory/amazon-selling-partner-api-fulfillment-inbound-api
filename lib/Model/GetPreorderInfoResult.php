@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * GetPreorderInfoResult Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class GetPreorderInfoResult implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'shipment_contains_preorderable_items' => 'bool',
         'shipment_confirmed_for_preorder' => 'bool',
-        'need_by_date' => '\Swagger\Client\Model\DateStringType',
-        'confirmed_fulfillable_date' => '\Swagger\Client\Model\DateStringType'
+        'need_by_date' => '\CrazyFactory\Spapi\Client\Model\DateStringType',
+        'confirmed_fulfillable_date' => '\CrazyFactory\Spapi\Client\Model\DateStringType'
     ];
 
     /**
@@ -273,7 +273,7 @@ class GetPreorderInfoResult implements ModelInterface, ArrayAccess
     /**
      * Gets need_by_date
      *
-     * @return \Swagger\Client\Model\DateStringType
+     * @return \CrazyFactory\Spapi\Client\Model\DateStringType
      */
     public function getNeedByDate()
     {
@@ -283,7 +283,7 @@ class GetPreorderInfoResult implements ModelInterface, ArrayAccess
     /**
      * Sets need_by_date
      *
-     * @param \Swagger\Client\Model\DateStringType $need_by_date Date that the shipment would need to arrive at an Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items if this shipment is later confirmed for pre-order. In YYYY-MM-DD format. See also the confirmPreorder operation.
+     * @param \CrazyFactory\Spapi\Client\Model\DateStringType $need_by_date Date that the shipment would need to arrive at an Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items if this shipment is later confirmed for pre-order. In YYYY-MM-DD format. See also the confirmPreorder operation.
      *
      * @return $this
      */
@@ -297,7 +297,7 @@ class GetPreorderInfoResult implements ModelInterface, ArrayAccess
     /**
      * Gets confirmed_fulfillable_date
      *
-     * @return \Swagger\Client\Model\DateStringType
+     * @return \CrazyFactory\Spapi\Client\Model\DateStringType
      */
     public function getConfirmedFulfillableDate()
     {
@@ -307,7 +307,7 @@ class GetPreorderInfoResult implements ModelInterface, ArrayAccess
     /**
      * Sets confirmed_fulfillable_date
      *
-     * @param \Swagger\Client\Model\DateStringType $confirmed_fulfillable_date Date in YYYY-MM-DD format that determines which pre-order items in the shipment are eligible for pre-order. If this shipment is confirmed for pre-order with a subsequent call to the confirmPreorder operation, the pre-order Buy Box will appear for any pre-order items in the shipment with a release date on or after this date. Call the getShipmentItems operation to get the release dates for the pre-order items in this shipment.
+     * @param \CrazyFactory\Spapi\Client\Model\DateStringType $confirmed_fulfillable_date Date in YYYY-MM-DD format that determines which pre-order items in the shipment are eligible for pre-order. If this shipment is confirmed for pre-order with a subsequent call to the confirmPreorder operation, the pre-order Buy Box will appear for any pre-order items in the shipment with a release date on or after this date. Call the getShipmentItems operation to get the release dates for the pre-order items in this shipment.
      *
      * @return $this
      */

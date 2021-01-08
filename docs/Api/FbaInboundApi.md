@@ -1,4 +1,4 @@
-# Swagger\Client\FbaInboundApi
+# CrazyFactory\Spapi\Client\FbaInboundApi
 
 All URIs are relative to *https://sellingpartnerapi-na.amazon.com*
 
@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 
 # **confirmPreorder**
-> \Swagger\Client\Model\ConfirmPreorderResponse confirmPreorder($shipment_id, $need_by_date, $marketplace_id)
+> \CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse confirmPreorder($shipment_id, $need_by_date, $marketplace_id)
 
 
 
@@ -35,7 +35,7 @@ Returns information needed to confirm a shipment for pre-order. Call this operat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ConfirmPreorderResponse**](../Model/ConfirmPreorderResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse**](../Model/ConfirmPreorderResponse.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **confirmTransport**
-> \Swagger\Client\Model\ConfirmTransportResponse confirmTransport($shipment_id)
+> \CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse confirmTransport($shipment_id)
 
 
 
@@ -88,7 +88,7 @@ Confirms that the seller accepts the Amazon-partnered shipping estimate, agrees 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ConfirmTransportResponse**](../Model/ConfirmTransportResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse**](../Model/ConfirmTransportResponse.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createInboundShipment**
-> \Swagger\Client\Model\InboundShipmentResponse createInboundShipment($body, $shipment_id)
+> \CrazyFactory\Spapi\Client\Model\InboundShipmentResponse createInboundShipment($body, $shipment_id)
 
 
 
@@ -137,12 +137,12 @@ Returns a new inbound shipment based on the specified shipmentId that was return
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\InboundShipmentRequest(); // \Swagger\Client\Model\InboundShipmentRequest | 
+$body = new \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest(); // \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest | 
 $shipment_id = "shipment_id_example"; // string | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 
 try {
@@ -158,12 +158,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\InboundShipmentRequest**](../Model/InboundShipmentRequest.md)|  |
+ **body** | [**\CrazyFactory\Spapi\Client\Model\InboundShipmentRequest**](../Model/InboundShipmentRequest.md)|  |
  **shipment_id** | **string**| A shipment identifier originally returned by the createInboundShipmentPlan operation. |
 
 ### Return type
 
-[**\Swagger\Client\Model\InboundShipmentResponse**](../Model/InboundShipmentResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse**](../Model/InboundShipmentResponse.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createInboundShipmentPlan**
-> \Swagger\Client\Model\CreateInboundShipmentPlanResponse createInboundShipmentPlan($body)
+> \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse createInboundShipmentPlan($body)
 
 
 
@@ -188,12 +188,12 @@ Returns one or more inbound shipment plans, which provide the information you ne
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CreateInboundShipmentPlanRequest(); // \Swagger\Client\Model\CreateInboundShipmentPlanRequest | 
+$body = new \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanRequest(); // \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanRequest | 
 
 try {
     $result = $apiInstance->createInboundShipmentPlan($body);
@@ -208,11 +208,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateInboundShipmentPlanRequest**](../Model/CreateInboundShipmentPlanRequest.md)|  |
+ **body** | [**\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanRequest**](../Model/CreateInboundShipmentPlanRequest.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\CreateInboundShipmentPlanResponse**](../Model/CreateInboundShipmentPlanResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse**](../Model/CreateInboundShipmentPlanResponse.md)
 
 ### Authorization
 
@@ -226,7 +226,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **estimateTransport**
-> \Swagger\Client\Model\EstimateTransportResponse estimateTransport($shipment_id)
+> \CrazyFactory\Spapi\Client\Model\EstimateTransportResponse estimateTransport($shipment_id)
 
 
 
@@ -237,7 +237,7 @@ Initiates the process of estimating the shipping cost for an inbound shipment by
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -261,7 +261,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\EstimateTransportResponse**](../Model/EstimateTransportResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse**](../Model/EstimateTransportResponse.md)
 
 ### Authorization
 
@@ -275,7 +275,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBillOfLading**
-> \Swagger\Client\Model\GetBillOfLadingResponse getBillOfLading($shipment_id)
+> \CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse getBillOfLading($shipment_id)
 
 
 
@@ -286,7 +286,7 @@ Returns a bill of lading for a Less Than Truckload/Full Truckload (LTL/FTL) ship
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -310,7 +310,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetBillOfLadingResponse**](../Model/GetBillOfLadingResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse**](../Model/GetBillOfLadingResponse.md)
 
 ### Authorization
 
@@ -324,7 +324,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getInboundGuidance**
-> \Swagger\Client\Model\GetInboundGuidanceResponse getInboundGuidance($marketplace_id, $seller_sku_list, $asin_list)
+> \CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse getInboundGuidance($marketplace_id, $seller_sku_list, $asin_list)
 
 
 
@@ -335,7 +335,7 @@ Returns information that lets a seller know if Amazon recommends sending an item
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -363,7 +363,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetInboundGuidanceResponse**](../Model/GetInboundGuidanceResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse**](../Model/GetInboundGuidanceResponse.md)
 
 ### Authorization
 
@@ -377,7 +377,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLabels**
-> \Swagger\Client\Model\GetLabelsResponse getLabels($shipment_id, $page_type, $label_type, $number_of_packages, $package_labels_to_print, $number_of_pallets)
+> \CrazyFactory\Spapi\Client\Model\GetLabelsResponse getLabels($shipment_id, $page_type, $label_type, $number_of_packages, $package_labels_to_print, $number_of_pallets)
 
 
 
@@ -388,7 +388,7 @@ Returns package/pallet labels for faster and more accurate shipment processing a
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetLabelsResponse**](../Model/GetLabelsResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\GetLabelsResponse**](../Model/GetLabelsResponse.md)
 
 ### Authorization
 
@@ -436,7 +436,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPreorderInfo**
-> \Swagger\Client\Model\GetPreorderInfoResponse getPreorderInfo($shipment_id, $marketplace_id)
+> \CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse getPreorderInfo($shipment_id, $marketplace_id)
 
 
 
@@ -447,7 +447,7 @@ Returns pre-order information, including dates, that a seller needs before confi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -473,7 +473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetPreorderInfoResponse**](../Model/GetPreorderInfoResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse**](../Model/GetPreorderInfoResponse.md)
 
 ### Authorization
 
@@ -487,7 +487,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPrepInstructions**
-> \Swagger\Client\Model\GetPrepInstructionsResponse getPrepInstructions($ship_to_country_code, $seller_sku_list, $asin_list)
+> \CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse getPrepInstructions($ship_to_country_code, $seller_sku_list, $asin_list)
 
 
 
@@ -498,7 +498,7 @@ Returns labeling requirements and item preparation instructions to help prepare 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -526,7 +526,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetPrepInstructionsResponse**](../Model/GetPrepInstructionsResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse**](../Model/GetPrepInstructionsResponse.md)
 
 ### Authorization
 
@@ -540,7 +540,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getShipmentItems**
-> \Swagger\Client\Model\GetShipmentItemsResponse getShipmentItems($query_type, $marketplace_id, $last_updated_after, $last_updated_before, $next_token)
+> \CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse getShipmentItems($query_type, $marketplace_id, $last_updated_after, $last_updated_before, $next_token)
 
 
 
@@ -551,7 +551,7 @@ Returns a list of items in a specified inbound shipment, or a list of items that
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -583,7 +583,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetShipmentItemsResponse**](../Model/GetShipmentItemsResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse**](../Model/GetShipmentItemsResponse.md)
 
 ### Authorization
 
@@ -597,7 +597,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getShipmentItemsByShipmentId**
-> \Swagger\Client\Model\GetShipmentItemsResponse getShipmentItemsByShipmentId($shipment_id, $marketplace_id)
+> \CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse getShipmentItemsByShipmentId($shipment_id, $marketplace_id)
 
 
 
@@ -608,7 +608,7 @@ Returns a list of items in a specified inbound shipment.  **Usage Plan:**  | Rat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -634,7 +634,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetShipmentItemsResponse**](../Model/GetShipmentItemsResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse**](../Model/GetShipmentItemsResponse.md)
 
 ### Authorization
 
@@ -648,7 +648,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getShipments**
-> \Swagger\Client\Model\GetShipmentsResponse getShipments($query_type, $marketplace_id, $shipment_status_list, $shipment_id_list, $last_updated_after, $last_updated_before, $next_token)
+> \CrazyFactory\Spapi\Client\Model\GetShipmentsResponse getShipments($query_type, $marketplace_id, $shipment_status_list, $shipment_id_list, $last_updated_after, $last_updated_before, $next_token)
 
 
 
@@ -659,7 +659,7 @@ Returns a list of inbound shipments based on criteria that you specify.  **Usage
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -695,7 +695,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetShipmentsResponse**](../Model/GetShipmentsResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse**](../Model/GetShipmentsResponse.md)
 
 ### Authorization
 
@@ -709,7 +709,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTransportDetails**
-> \Swagger\Client\Model\GetTransportDetailsResponse getTransportDetails($shipment_id)
+> \CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse getTransportDetails($shipment_id)
 
 
 
@@ -720,7 +720,7 @@ Returns current transportation information about an inbound shipment.  **Usage P
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -744,7 +744,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetTransportDetailsResponse**](../Model/GetTransportDetailsResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse**](../Model/GetTransportDetailsResponse.md)
 
 ### Authorization
 
@@ -758,7 +758,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putTransportDetails**
-> \Swagger\Client\Model\PutTransportDetailsResponse putTransportDetails($shipment_id, $body)
+> \CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse putTransportDetails($shipment_id, $body)
 
 
 
@@ -769,13 +769,13 @@ Sends transportation information to Amazon about an inbound shipment.  **Usage P
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $shipment_id = "shipment_id_example"; // string | A shipment identifier originally returned by the createInboundShipmentPlan operation.
-$body = new \Swagger\Client\Model\PutTransportDetailsRequest(); // \Swagger\Client\Model\PutTransportDetailsRequest | 
+$body = new \CrazyFactory\Spapi\Client\Model\PutTransportDetailsRequest(); // \CrazyFactory\Spapi\Client\Model\PutTransportDetailsRequest | 
 
 try {
     $result = $apiInstance->putTransportDetails($shipment_id, $body);
@@ -791,11 +791,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shipment_id** | **string**| A shipment identifier originally returned by the createInboundShipmentPlan operation. |
- **body** | [**\Swagger\Client\Model\PutTransportDetailsRequest**](../Model/PutTransportDetailsRequest.md)|  |
+ **body** | [**\CrazyFactory\Spapi\Client\Model\PutTransportDetailsRequest**](../Model/PutTransportDetailsRequest.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\PutTransportDetailsResponse**](../Model/PutTransportDetailsResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse**](../Model/PutTransportDetailsResponse.md)
 
 ### Authorization
 
@@ -809,7 +809,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateInboundShipment**
-> \Swagger\Client\Model\InboundShipmentResponse updateInboundShipment($body, $shipment_id)
+> \CrazyFactory\Spapi\Client\Model\InboundShipmentResponse updateInboundShipment($body, $shipment_id)
 
 
 
@@ -820,12 +820,12 @@ Adds, updates, or removes items from the inbound shipment identified by the spec
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\InboundShipmentRequest(); // \Swagger\Client\Model\InboundShipmentRequest | 
+$body = new \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest(); // \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest | 
 $shipment_id = "shipment_id_example"; // string | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 
 try {
@@ -841,12 +841,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\InboundShipmentRequest**](../Model/InboundShipmentRequest.md)|  |
+ **body** | [**\CrazyFactory\Spapi\Client\Model\InboundShipmentRequest**](../Model/InboundShipmentRequest.md)|  |
  **shipment_id** | **string**| A shipment identifier originally returned by the createInboundShipmentPlan operation. |
 
 ### Return type
 
-[**\Swagger\Client\Model\InboundShipmentResponse**](../Model/InboundShipmentResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse**](../Model/InboundShipmentResponse.md)
 
 ### Authorization
 
@@ -860,7 +860,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voidTransport**
-> \Swagger\Client\Model\VoidTransportResponse voidTransport($shipment_id)
+> \CrazyFactory\Spapi\Client\Model\VoidTransportResponse voidTransport($shipment_id)
 
 
 
@@ -871,7 +871,7 @@ Cancels a previously-confirmed request to ship an inbound shipment using an Amaz
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FbaInboundApi(
+$apiInstance = new CrazyFactory\Spapi\Client\Api\FbaInboundApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -895,7 +895,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VoidTransportResponse**](../Model/VoidTransportResponse.md)
+[**\CrazyFactory\Spapi\Client\Model\VoidTransportResponse**](../Model/VoidTransportResponse.md)
 
 ### Authorization
 

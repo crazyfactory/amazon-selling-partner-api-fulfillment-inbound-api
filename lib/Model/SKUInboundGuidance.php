@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * SKUInboundGuidance Class Doc Comment
  *
  * @category Class
  * @description Reasons why a given seller SKU is not recommended for shipment to Amazon&#39;s fulfillment network.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class SKUInboundGuidance implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
-        'inbound_guidance' => '\Swagger\Client\Model\InboundGuidance',
-        'guidance_reason_list' => '\Swagger\Client\Model\GuidanceReasonList'
+        'inbound_guidance' => '\CrazyFactory\Spapi\Client\Model\InboundGuidance',
+        'guidance_reason_list' => '\CrazyFactory\Spapi\Client\Model\GuidanceReasonList'
     ];
 
     /**
@@ -283,7 +283,7 @@ class SKUInboundGuidance implements ModelInterface, ArrayAccess
     /**
      * Gets inbound_guidance
      *
-     * @return \Swagger\Client\Model\InboundGuidance
+     * @return \CrazyFactory\Spapi\Client\Model\InboundGuidance
      */
     public function getInboundGuidance()
     {
@@ -293,7 +293,7 @@ class SKUInboundGuidance implements ModelInterface, ArrayAccess
     /**
      * Sets inbound_guidance
      *
-     * @param \Swagger\Client\Model\InboundGuidance $inbound_guidance Specific inbound guidance for an item.
+     * @param \CrazyFactory\Spapi\Client\Model\InboundGuidance $inbound_guidance Specific inbound guidance for an item.
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class SKUInboundGuidance implements ModelInterface, ArrayAccess
     /**
      * Gets guidance_reason_list
      *
-     * @return \Swagger\Client\Model\GuidanceReasonList
+     * @return \CrazyFactory\Spapi\Client\Model\GuidanceReasonList
      */
     public function getGuidanceReasonList()
     {
@@ -317,7 +317,7 @@ class SKUInboundGuidance implements ModelInterface, ArrayAccess
     /**
      * Sets guidance_reason_list
      *
-     * @param \Swagger\Client\Model\GuidanceReasonList $guidance_reason_list A list of reasons for the current inbound guidance for this item.
+     * @param \CrazyFactory\Spapi\Client\Model\GuidanceReasonList $guidance_reason_list A list of reasons for the current inbound guidance for this item.
      *
      * @return $this
      */

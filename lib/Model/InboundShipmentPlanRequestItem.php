@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace CrazyFactory\Spapi\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * InboundShipmentPlanRequestItem Class Doc Comment
  *
  * @category Class
  * @description Item information for creating an inbound shipment plan. Submitted with a call to the createInboundShipmentPlan operation.
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,10 +60,10 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
-        'condition' => '\Swagger\Client\Model\Condition',
-        'quantity' => '\Swagger\Client\Model\Quantity',
-        'quantity_in_case' => '\Swagger\Client\Model\Quantity',
-        'prep_details_list' => '\Swagger\Client\Model\PrepDetailsList'
+        'condition' => '\CrazyFactory\Spapi\Client\Model\Condition',
+        'quantity' => '\CrazyFactory\Spapi\Client\Model\Quantity',
+        'quantity_in_case' => '\CrazyFactory\Spapi\Client\Model\Quantity',
+        'prep_details_list' => '\CrazyFactory\Spapi\Client\Model\PrepDetailsList'
     ];
 
     /**
@@ -298,7 +298,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Gets condition
      *
-     * @return \Swagger\Client\Model\Condition
+     * @return \CrazyFactory\Spapi\Client\Model\Condition
      */
     public function getCondition()
     {
@@ -308,7 +308,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Sets condition
      *
-     * @param \Swagger\Client\Model\Condition $condition condition
+     * @param \CrazyFactory\Spapi\Client\Model\Condition $condition condition
      *
      * @return $this
      */
@@ -322,7 +322,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity
      *
-     * @return \Swagger\Client\Model\Quantity
+     * @return \CrazyFactory\Spapi\Client\Model\Quantity
      */
     public function getQuantity()
     {
@@ -332,7 +332,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity
      *
-     * @param \Swagger\Client\Model\Quantity $quantity quantity
+     * @param \CrazyFactory\Spapi\Client\Model\Quantity $quantity quantity
      *
      * @return $this
      */
@@ -346,7 +346,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity_in_case
      *
-     * @return \Swagger\Client\Model\Quantity
+     * @return \CrazyFactory\Spapi\Client\Model\Quantity
      */
     public function getQuantityInCase()
     {
@@ -356,7 +356,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity_in_case
      *
-     * @param \Swagger\Client\Model\Quantity $quantity_in_case The item quantity in each case, for case-packed items. Note that QuantityInCase multiplied by the number of cases in the inbound shipment equals Quantity. Also note that all of the boxes of an inbound shipment must either be case packed or individually packed. For that reason, when you submit the createInboundShipmentPlan operation, the value of QuantityInCase must be provided for every item in the shipment or for none of the items in the shipment.
+     * @param \CrazyFactory\Spapi\Client\Model\Quantity $quantity_in_case The item quantity in each case, for case-packed items. Note that QuantityInCase multiplied by the number of cases in the inbound shipment equals Quantity. Also note that all of the boxes of an inbound shipment must either be case packed or individually packed. For that reason, when you submit the createInboundShipmentPlan operation, the value of QuantityInCase must be provided for every item in the shipment or for none of the items in the shipment.
      *
      * @return $this
      */
@@ -370,7 +370,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Gets prep_details_list
      *
-     * @return \Swagger\Client\Model\PrepDetailsList
+     * @return \CrazyFactory\Spapi\Client\Model\PrepDetailsList
      */
     public function getPrepDetailsList()
     {
@@ -380,7 +380,7 @@ class InboundShipmentPlanRequestItem implements ModelInterface, ArrayAccess
     /**
      * Sets prep_details_list
      *
-     * @param \Swagger\Client\Model\PrepDetailsList $prep_details_list prep_details_list
+     * @param \CrazyFactory\Spapi\Client\Model\PrepDetailsList $prep_details_list prep_details_list
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace CrazyFactory\Spapi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use CrazyFactory\Spapi\Client\ApiException;
+use CrazyFactory\Spapi\Client\Configuration;
+use CrazyFactory\Spapi\Client\HeaderSelector;
+use CrazyFactory\Spapi\Client\ObjectSerializer;
 
 /**
  * FbaInboundApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CrazyFactory\Spapi\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class FbaInboundApi
      * @param  \DateTime $need_by_date Date that the shipment must arrive at the Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items. Must be in YYYY-MM-DD format. The response to the getPreorderInfo operation returns this value. (required)
      * @param  string $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ConfirmPreorderResponse
+     * @return \CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse
      */
     public function confirmPreorder($shipment_id, $need_by_date, $marketplace_id)
     {
@@ -111,13 +111,13 @@ class FbaInboundApi
      * @param  \DateTime $need_by_date Date that the shipment must arrive at the Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items. Must be in YYYY-MM-DD format. The response to the getPreorderInfo operation returns this value. (required)
      * @param  string $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ConfirmPreorderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function confirmPreorderWithHttpInfo($shipment_id, $need_by_date, $marketplace_id)
     {
-        $returnType = '\Swagger\Client\Model\ConfirmPreorderResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse';
         $request = $this->confirmPreorderRequest($shipment_id, $need_by_date, $marketplace_id);
 
         try {
@@ -169,7 +169,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmPreorderResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -177,7 +177,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmPreorderResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmPreorderResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -193,7 +193,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmPreorderResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -201,7 +201,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmPreorderResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -209,7 +209,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmPreorderResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -217,7 +217,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmPreorderResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -225,7 +225,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmPreorderResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -271,7 +271,7 @@ class FbaInboundApi
      */
     public function confirmPreorderAsyncWithHttpInfo($shipment_id, $need_by_date, $marketplace_id)
     {
-        $returnType = '\Swagger\Client\Model\ConfirmPreorderResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\ConfirmPreorderResponse';
         $request = $this->confirmPreorderRequest($shipment_id, $need_by_date, $marketplace_id);
 
         return $this->client
@@ -443,9 +443,9 @@ class FbaInboundApi
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ConfirmTransportResponse
+     * @return \CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse
      */
     public function confirmTransport($shipment_id)
     {
@@ -458,13 +458,13 @@ class FbaInboundApi
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ConfirmTransportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function confirmTransportWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\ConfirmTransportResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse';
         $request = $this->confirmTransportRequest($shipment_id);
 
         try {
@@ -516,7 +516,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -524,7 +524,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -532,7 +532,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -540,7 +540,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -548,7 +548,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -556,7 +556,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -564,7 +564,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -572,7 +572,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConfirmTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -614,7 +614,7 @@ class FbaInboundApi
      */
     public function confirmTransportAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\ConfirmTransportResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\ConfirmTransportResponse';
         $request = $this->confirmTransportRequest($shipment_id);
 
         return $this->client
@@ -762,12 +762,12 @@ class FbaInboundApi
     /**
      * Operation createInboundShipment
      *
-     * @param  \Swagger\Client\Model\InboundShipmentRequest $body body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest $body body (required)
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InboundShipmentResponse
+     * @return \CrazyFactory\Spapi\Client\Model\InboundShipmentResponse
      */
     public function createInboundShipment($body, $shipment_id)
     {
@@ -778,16 +778,16 @@ class FbaInboundApi
     /**
      * Operation createInboundShipmentWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\InboundShipmentRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest $body (required)
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InboundShipmentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\InboundShipmentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createInboundShipmentWithHttpInfo($body, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\InboundShipmentResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse';
         $request = $this->createInboundShipmentRequest($body, $shipment_id);
 
         try {
@@ -839,7 +839,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -847,7 +847,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -855,7 +855,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -863,7 +863,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -871,7 +871,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -879,7 +879,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -887,7 +887,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -895,7 +895,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -910,7 +910,7 @@ class FbaInboundApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\InboundShipmentRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest $body (required)
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -931,7 +931,7 @@ class FbaInboundApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\InboundShipmentRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest $body (required)
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -939,7 +939,7 @@ class FbaInboundApi
      */
     public function createInboundShipmentAsyncWithHttpInfo($body, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\InboundShipmentResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse';
         $request = $this->createInboundShipmentRequest($body, $shipment_id);
 
         return $this->client
@@ -982,7 +982,7 @@ class FbaInboundApi
     /**
      * Create request for operation 'createInboundShipment'
      *
-     * @param  \Swagger\Client\Model\InboundShipmentRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest $body (required)
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -1097,11 +1097,11 @@ class FbaInboundApi
     /**
      * Operation createInboundShipmentPlan
      *
-     * @param  \Swagger\Client\Model\CreateInboundShipmentPlanRequest $body body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanRequest $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CreateInboundShipmentPlanResponse
+     * @return \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse
      */
     public function createInboundShipmentPlan($body)
     {
@@ -1112,15 +1112,15 @@ class FbaInboundApi
     /**
      * Operation createInboundShipmentPlanWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\CreateInboundShipmentPlanRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanRequest $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CreateInboundShipmentPlanResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createInboundShipmentPlanWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CreateInboundShipmentPlanResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse';
         $request = $this->createInboundShipmentPlanRequest($body);
 
         try {
@@ -1172,7 +1172,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateInboundShipmentPlanResponse',
+                        '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1180,7 +1180,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateInboundShipmentPlanResponse',
+                        '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1188,7 +1188,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateInboundShipmentPlanResponse',
+                        '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1196,7 +1196,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateInboundShipmentPlanResponse',
+                        '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1204,7 +1204,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateInboundShipmentPlanResponse',
+                        '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1212,7 +1212,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateInboundShipmentPlanResponse',
+                        '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1220,7 +1220,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateInboundShipmentPlanResponse',
+                        '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1228,7 +1228,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateInboundShipmentPlanResponse',
+                        '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1243,7 +1243,7 @@ class FbaInboundApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\CreateInboundShipmentPlanRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1263,14 +1263,14 @@ class FbaInboundApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\CreateInboundShipmentPlanRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createInboundShipmentPlanAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CreateInboundShipmentPlanResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanResponse';
         $request = $this->createInboundShipmentPlanRequest($body);
 
         return $this->client
@@ -1313,7 +1313,7 @@ class FbaInboundApi
     /**
      * Create request for operation 'createInboundShipmentPlan'
      *
-     * @param  \Swagger\Client\Model\CreateInboundShipmentPlanRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\CreateInboundShipmentPlanRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1415,9 +1415,9 @@ class FbaInboundApi
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\EstimateTransportResponse
+     * @return \CrazyFactory\Spapi\Client\Model\EstimateTransportResponse
      */
     public function estimateTransport($shipment_id)
     {
@@ -1430,13 +1430,13 @@ class FbaInboundApi
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\EstimateTransportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\EstimateTransportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function estimateTransportWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\EstimateTransportResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse';
         $request = $this->estimateTransportRequest($shipment_id);
 
         try {
@@ -1488,7 +1488,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EstimateTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1496,7 +1496,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EstimateTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1504,7 +1504,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EstimateTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1512,7 +1512,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EstimateTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1520,7 +1520,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EstimateTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1528,7 +1528,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EstimateTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1536,7 +1536,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EstimateTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1544,7 +1544,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EstimateTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1586,7 +1586,7 @@ class FbaInboundApi
      */
     public function estimateTransportAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\EstimateTransportResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\EstimateTransportResponse';
         $request = $this->estimateTransportRequest($shipment_id);
 
         return $this->client
@@ -1736,9 +1736,9 @@ class FbaInboundApi
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetBillOfLadingResponse
+     * @return \CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse
      */
     public function getBillOfLading($shipment_id)
     {
@@ -1751,13 +1751,13 @@ class FbaInboundApi
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetBillOfLadingResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBillOfLadingWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\GetBillOfLadingResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse';
         $request = $this->getBillOfLadingRequest($shipment_id);
 
         try {
@@ -1809,7 +1809,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetBillOfLadingResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1817,7 +1817,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetBillOfLadingResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1825,7 +1825,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetBillOfLadingResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1833,7 +1833,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetBillOfLadingResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1841,7 +1841,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetBillOfLadingResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1849,7 +1849,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetBillOfLadingResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1857,7 +1857,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetBillOfLadingResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1865,7 +1865,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetBillOfLadingResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1907,7 +1907,7 @@ class FbaInboundApi
      */
     public function getBillOfLadingAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\GetBillOfLadingResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetBillOfLadingResponse';
         $request = $this->getBillOfLadingRequest($shipment_id);
 
         return $this->client
@@ -2059,9 +2059,9 @@ class FbaInboundApi
      * @param  string[] $seller_sku_list A list of SellerSKU values. Used to identify items for which you want inbound guidance for shipment to Amazon&#39;s fulfillment network. Note: SellerSKU is qualified by the SellerId, which is included with every Selling Partner API operation that you submit. If you specify a SellerSKU that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
      * @param  string[] $asin_list A list of ASIN values. Used to identify items for which you want inbound guidance for shipment to Amazon&#39;s fulfillment network. Note: If you specify a ASIN that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetInboundGuidanceResponse
+     * @return \CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse
      */
     public function getInboundGuidance($marketplace_id, $seller_sku_list = null, $asin_list = null)
     {
@@ -2076,13 +2076,13 @@ class FbaInboundApi
      * @param  string[] $seller_sku_list A list of SellerSKU values. Used to identify items for which you want inbound guidance for shipment to Amazon&#39;s fulfillment network. Note: SellerSKU is qualified by the SellerId, which is included with every Selling Partner API operation that you submit. If you specify a SellerSKU that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
      * @param  string[] $asin_list A list of ASIN values. Used to identify items for which you want inbound guidance for shipment to Amazon&#39;s fulfillment network. Note: If you specify a ASIN that identifies a variation parent ASIN, this operation returns an error. A variation parent ASIN represents a generic product that cannot be sold. Variation child ASINs represent products that have specific characteristics (such as size and color) and can be sold. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetInboundGuidanceResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInboundGuidanceWithHttpInfo($marketplace_id, $seller_sku_list = null, $asin_list = null)
     {
-        $returnType = '\Swagger\Client\Model\GetInboundGuidanceResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse';
         $request = $this->getInboundGuidanceRequest($marketplace_id, $seller_sku_list, $asin_list);
 
         try {
@@ -2134,7 +2134,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetInboundGuidanceResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2142,7 +2142,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetInboundGuidanceResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2150,7 +2150,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetInboundGuidanceResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2158,7 +2158,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetInboundGuidanceResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2166,7 +2166,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetInboundGuidanceResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2174,7 +2174,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetInboundGuidanceResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2182,7 +2182,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetInboundGuidanceResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2190,7 +2190,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetInboundGuidanceResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2236,7 +2236,7 @@ class FbaInboundApi
      */
     public function getInboundGuidanceAsyncWithHttpInfo($marketplace_id, $seller_sku_list = null, $asin_list = null)
     {
-        $returnType = '\Swagger\Client\Model\GetInboundGuidanceResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetInboundGuidanceResponse';
         $request = $this->getInboundGuidanceRequest($marketplace_id, $seller_sku_list, $asin_list);
 
         return $this->client
@@ -2411,9 +2411,9 @@ class FbaInboundApi
      * @param  string[] $package_labels_to_print A list of identifiers that specify packages for which you want package labels printed.  Must match CartonId values previously passed using the FBA Inbound Shipment Carton Information Feed. If not, the operation returns the IncorrectPackageIdentifier error code. (optional)
      * @param  int $number_of_pallets The number of pallets in the shipment. This returns four identical labels for each pallet. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetLabelsResponse
+     * @return \CrazyFactory\Spapi\Client\Model\GetLabelsResponse
      */
     public function getLabels($shipment_id, $page_type, $label_type, $number_of_packages = null, $package_labels_to_print = null, $number_of_pallets = null)
     {
@@ -2431,13 +2431,13 @@ class FbaInboundApi
      * @param  string[] $package_labels_to_print A list of identifiers that specify packages for which you want package labels printed.  Must match CartonId values previously passed using the FBA Inbound Shipment Carton Information Feed. If not, the operation returns the IncorrectPackageIdentifier error code. (optional)
      * @param  int $number_of_pallets The number of pallets in the shipment. This returns four identical labels for each pallet. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetLabelsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\GetLabelsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getLabelsWithHttpInfo($shipment_id, $page_type, $label_type, $number_of_packages = null, $package_labels_to_print = null, $number_of_pallets = null)
     {
-        $returnType = '\Swagger\Client\Model\GetLabelsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetLabelsResponse';
         $request = $this->getLabelsRequest($shipment_id, $page_type, $label_type, $number_of_packages, $package_labels_to_print, $number_of_pallets);
 
         try {
@@ -2489,7 +2489,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetLabelsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetLabelsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2497,7 +2497,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetLabelsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetLabelsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2505,7 +2505,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetLabelsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetLabelsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2513,7 +2513,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetLabelsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetLabelsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2521,7 +2521,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetLabelsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetLabelsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2529,7 +2529,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetLabelsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetLabelsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2537,7 +2537,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetLabelsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetLabelsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2545,7 +2545,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetLabelsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetLabelsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2597,7 +2597,7 @@ class FbaInboundApi
      */
     public function getLabelsAsyncWithHttpInfo($shipment_id, $page_type, $label_type, $number_of_packages = null, $package_labels_to_print = null, $number_of_pallets = null)
     {
-        $returnType = '\Swagger\Client\Model\GetLabelsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetLabelsResponse';
         $request = $this->getLabelsRequest($shipment_id, $page_type, $label_type, $number_of_packages, $package_labels_to_print, $number_of_pallets);
 
         return $this->client
@@ -2792,9 +2792,9 @@ class FbaInboundApi
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      * @param  string $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetPreorderInfoResponse
+     * @return \CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse
      */
     public function getPreorderInfo($shipment_id, $marketplace_id)
     {
@@ -2808,13 +2808,13 @@ class FbaInboundApi
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      * @param  string $marketplace_id A marketplace identifier. Specifies the marketplace the shipment is tied to. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetPreorderInfoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPreorderInfoWithHttpInfo($shipment_id, $marketplace_id)
     {
-        $returnType = '\Swagger\Client\Model\GetPreorderInfoResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse';
         $request = $this->getPreorderInfoRequest($shipment_id, $marketplace_id);
 
         try {
@@ -2866,7 +2866,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPreorderInfoResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2874,7 +2874,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPreorderInfoResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2882,7 +2882,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPreorderInfoResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2890,7 +2890,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPreorderInfoResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2898,7 +2898,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPreorderInfoResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2906,7 +2906,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPreorderInfoResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2914,7 +2914,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPreorderInfoResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2922,7 +2922,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPreorderInfoResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2966,7 +2966,7 @@ class FbaInboundApi
      */
     public function getPreorderInfoAsyncWithHttpInfo($shipment_id, $marketplace_id)
     {
-        $returnType = '\Swagger\Client\Model\GetPreorderInfoResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetPreorderInfoResponse';
         $request = $this->getPreorderInfoRequest($shipment_id, $marketplace_id);
 
         return $this->client
@@ -3129,9 +3129,9 @@ class FbaInboundApi
      * @param  string[] $seller_sku_list A list of SellerSKU values. Used to identify items for which you want labeling requirements and item preparation instructions for shipment to Amazon&#39;s fulfillment network. The SellerSKU is qualified by the Seller ID, which is included with every call to the Seller Partner API.  Note: Include seller SKUs that you have used to list items on Amazon&#39;s retail website. If you include a seller SKU that you have never used to list an item on Amazon&#39;s retail website, the seller SKU is returned in the InvalidSKUList property in the response. (optional)
      * @param  string[] $asin_list A list of ASIN values. Used to identify items for which you want item preparation instructions to help with item sourcing decisions.  Note: ASINs must be included in the product catalog for at least one of the marketplaces that the seller  participates in. Any ASIN that is not included in the product catalog for at least one of the marketplaces that the seller participates in is returned in the InvalidASINList property in the response. You can find out which marketplaces a seller participates in by calling the getMarketplaceParticipations operation in the Selling Partner API for Sellers. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetPrepInstructionsResponse
+     * @return \CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse
      */
     public function getPrepInstructions($ship_to_country_code, $seller_sku_list = null, $asin_list = null)
     {
@@ -3146,13 +3146,13 @@ class FbaInboundApi
      * @param  string[] $seller_sku_list A list of SellerSKU values. Used to identify items for which you want labeling requirements and item preparation instructions for shipment to Amazon&#39;s fulfillment network. The SellerSKU is qualified by the Seller ID, which is included with every call to the Seller Partner API.  Note: Include seller SKUs that you have used to list items on Amazon&#39;s retail website. If you include a seller SKU that you have never used to list an item on Amazon&#39;s retail website, the seller SKU is returned in the InvalidSKUList property in the response. (optional)
      * @param  string[] $asin_list A list of ASIN values. Used to identify items for which you want item preparation instructions to help with item sourcing decisions.  Note: ASINs must be included in the product catalog for at least one of the marketplaces that the seller  participates in. Any ASIN that is not included in the product catalog for at least one of the marketplaces that the seller participates in is returned in the InvalidASINList property in the response. You can find out which marketplaces a seller participates in by calling the getMarketplaceParticipations operation in the Selling Partner API for Sellers. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetPrepInstructionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPrepInstructionsWithHttpInfo($ship_to_country_code, $seller_sku_list = null, $asin_list = null)
     {
-        $returnType = '\Swagger\Client\Model\GetPrepInstructionsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse';
         $request = $this->getPrepInstructionsRequest($ship_to_country_code, $seller_sku_list, $asin_list);
 
         try {
@@ -3204,7 +3204,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPrepInstructionsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3212,7 +3212,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPrepInstructionsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3220,7 +3220,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPrepInstructionsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3228,7 +3228,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPrepInstructionsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3236,7 +3236,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPrepInstructionsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3244,7 +3244,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPrepInstructionsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3252,7 +3252,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPrepInstructionsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3260,7 +3260,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetPrepInstructionsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3306,7 +3306,7 @@ class FbaInboundApi
      */
     public function getPrepInstructionsAsyncWithHttpInfo($ship_to_country_code, $seller_sku_list = null, $asin_list = null)
     {
-        $returnType = '\Swagger\Client\Model\GetPrepInstructionsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetPrepInstructionsResponse';
         $request = $this->getPrepInstructionsRequest($ship_to_country_code, $seller_sku_list, $asin_list);
 
         return $this->client
@@ -3480,9 +3480,9 @@ class FbaInboundApi
      * @param  \DateTime $last_updated_before A date used for selecting inbound shipment items that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
      * @param  string $next_token A string token returned in the response to your previous request. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetShipmentItemsResponse
+     * @return \CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse
      */
     public function getShipmentItems($query_type, $marketplace_id, $last_updated_after = null, $last_updated_before = null, $next_token = null)
     {
@@ -3499,13 +3499,13 @@ class FbaInboundApi
      * @param  \DateTime $last_updated_before A date used for selecting inbound shipment items that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
      * @param  string $next_token A string token returned in the response to your previous request. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetShipmentItemsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentItemsWithHttpInfo($query_type, $marketplace_id, $last_updated_after = null, $last_updated_before = null, $next_token = null)
     {
-        $returnType = '\Swagger\Client\Model\GetShipmentItemsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse';
         $request = $this->getShipmentItemsRequest($query_type, $marketplace_id, $last_updated_after, $last_updated_before, $next_token);
 
         try {
@@ -3557,7 +3557,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3565,7 +3565,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3573,7 +3573,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3581,7 +3581,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3589,7 +3589,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3597,7 +3597,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3605,7 +3605,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3613,7 +3613,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3663,7 +3663,7 @@ class FbaInboundApi
      */
     public function getShipmentItemsAsyncWithHttpInfo($query_type, $marketplace_id, $last_updated_after = null, $last_updated_before = null, $next_token = null)
     {
-        $returnType = '\Swagger\Client\Model\GetShipmentItemsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse';
         $request = $this->getShipmentItemsRequest($query_type, $marketplace_id, $last_updated_after, $last_updated_before, $next_token);
 
         return $this->client
@@ -3836,9 +3836,9 @@ class FbaInboundApi
      * @param  string $shipment_id A shipment identifier used for selecting items in a specific inbound shipment. (required)
      * @param  string $marketplace_id A marketplace identifier. Specifies the marketplace where the product would be stored. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetShipmentItemsResponse
+     * @return \CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse
      */
     public function getShipmentItemsByShipmentId($shipment_id, $marketplace_id)
     {
@@ -3852,13 +3852,13 @@ class FbaInboundApi
      * @param  string $shipment_id A shipment identifier used for selecting items in a specific inbound shipment. (required)
      * @param  string $marketplace_id A marketplace identifier. Specifies the marketplace where the product would be stored. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetShipmentItemsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentItemsByShipmentIdWithHttpInfo($shipment_id, $marketplace_id)
     {
-        $returnType = '\Swagger\Client\Model\GetShipmentItemsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse';
         $request = $this->getShipmentItemsByShipmentIdRequest($shipment_id, $marketplace_id);
 
         try {
@@ -3910,7 +3910,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3918,7 +3918,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3926,7 +3926,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3934,7 +3934,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3942,7 +3942,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3950,7 +3950,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3958,7 +3958,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3966,7 +3966,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentItemsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4010,7 +4010,7 @@ class FbaInboundApi
      */
     public function getShipmentItemsByShipmentIdAsyncWithHttpInfo($shipment_id, $marketplace_id)
     {
-        $returnType = '\Swagger\Client\Model\GetShipmentItemsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetShipmentItemsResponse';
         $request = $this->getShipmentItemsByShipmentIdRequest($shipment_id, $marketplace_id);
 
         return $this->client
@@ -4177,9 +4177,9 @@ class FbaInboundApi
      * @param  \DateTime $last_updated_before A date used for selecting inbound shipments that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
      * @param  string $next_token A string token returned in the response to your previous request. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetShipmentsResponse
+     * @return \CrazyFactory\Spapi\Client\Model\GetShipmentsResponse
      */
     public function getShipments($query_type, $marketplace_id, $shipment_status_list = null, $shipment_id_list = null, $last_updated_after = null, $last_updated_before = null, $next_token = null)
     {
@@ -4198,13 +4198,13 @@ class FbaInboundApi
      * @param  \DateTime $last_updated_before A date used for selecting inbound shipments that were last updated before (or at) a specified time. The selection includes updates made by Amazon and by the seller. (optional)
      * @param  string $next_token A string token returned in the response to your previous request. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetShipmentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\GetShipmentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentsWithHttpInfo($query_type, $marketplace_id, $shipment_status_list = null, $shipment_id_list = null, $last_updated_after = null, $last_updated_before = null, $next_token = null)
     {
-        $returnType = '\Swagger\Client\Model\GetShipmentsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse';
         $request = $this->getShipmentsRequest($query_type, $marketplace_id, $shipment_status_list, $shipment_id_list, $last_updated_after, $last_updated_before, $next_token);
 
         try {
@@ -4256,7 +4256,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4264,7 +4264,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4272,7 +4272,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4280,7 +4280,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4288,7 +4288,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4296,7 +4296,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4304,7 +4304,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4312,7 +4312,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetShipmentsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4366,7 +4366,7 @@ class FbaInboundApi
      */
     public function getShipmentsAsyncWithHttpInfo($query_type, $marketplace_id, $shipment_status_list = null, $shipment_id_list = null, $last_updated_after = null, $last_updated_before = null, $next_token = null)
     {
-        $returnType = '\Swagger\Client\Model\GetShipmentsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetShipmentsResponse';
         $request = $this->getShipmentsRequest($query_type, $marketplace_id, $shipment_status_list, $shipment_id_list, $last_updated_after, $last_updated_before, $next_token);
 
         return $this->client
@@ -4554,9 +4554,9 @@ class FbaInboundApi
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetTransportDetailsResponse
+     * @return \CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse
      */
     public function getTransportDetails($shipment_id)
     {
@@ -4569,13 +4569,13 @@ class FbaInboundApi
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetTransportDetailsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTransportDetailsWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\GetTransportDetailsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse';
         $request = $this->getTransportDetailsRequest($shipment_id);
 
         try {
@@ -4627,7 +4627,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4635,7 +4635,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4643,7 +4643,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4651,7 +4651,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4659,7 +4659,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4667,7 +4667,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4675,7 +4675,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4683,7 +4683,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4725,7 +4725,7 @@ class FbaInboundApi
      */
     public function getTransportDetailsAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\GetTransportDetailsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\GetTransportDetailsResponse';
         $request = $this->getTransportDetailsRequest($shipment_id);
 
         return $this->client
@@ -4874,11 +4874,11 @@ class FbaInboundApi
      * Operation putTransportDetails
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param  \Swagger\Client\Model\PutTransportDetailsRequest $body body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\PutTransportDetailsRequest $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PutTransportDetailsResponse
+     * @return \CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse
      */
     public function putTransportDetails($shipment_id, $body)
     {
@@ -4890,15 +4890,15 @@ class FbaInboundApi
      * Operation putTransportDetailsWithHttpInfo
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param  \Swagger\Client\Model\PutTransportDetailsRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\PutTransportDetailsRequest $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PutTransportDetailsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function putTransportDetailsWithHttpInfo($shipment_id, $body)
     {
-        $returnType = '\Swagger\Client\Model\PutTransportDetailsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse';
         $request = $this->putTransportDetailsRequest($shipment_id, $body);
 
         try {
@@ -4950,7 +4950,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4958,7 +4958,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4966,7 +4966,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4974,7 +4974,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4982,7 +4982,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4990,7 +4990,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4998,7 +4998,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5006,7 +5006,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PutTransportDetailsResponse',
+                        '\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5022,7 +5022,7 @@ class FbaInboundApi
      * 
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param  \Swagger\Client\Model\PutTransportDetailsRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\PutTransportDetailsRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5043,14 +5043,14 @@ class FbaInboundApi
      * 
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param  \Swagger\Client\Model\PutTransportDetailsRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\PutTransportDetailsRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function putTransportDetailsAsyncWithHttpInfo($shipment_id, $body)
     {
-        $returnType = '\Swagger\Client\Model\PutTransportDetailsResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\PutTransportDetailsResponse';
         $request = $this->putTransportDetailsRequest($shipment_id, $body);
 
         return $this->client
@@ -5094,7 +5094,7 @@ class FbaInboundApi
      * Create request for operation 'putTransportDetails'
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
-     * @param  \Swagger\Client\Model\PutTransportDetailsRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\PutTransportDetailsRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5208,12 +5208,12 @@ class FbaInboundApi
     /**
      * Operation updateInboundShipment
      *
-     * @param  \Swagger\Client\Model\InboundShipmentRequest $body body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest $body body (required)
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InboundShipmentResponse
+     * @return \CrazyFactory\Spapi\Client\Model\InboundShipmentResponse
      */
     public function updateInboundShipment($body, $shipment_id)
     {
@@ -5224,16 +5224,16 @@ class FbaInboundApi
     /**
      * Operation updateInboundShipmentWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\InboundShipmentRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest $body (required)
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InboundShipmentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\InboundShipmentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateInboundShipmentWithHttpInfo($body, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\InboundShipmentResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse';
         $request = $this->updateInboundShipmentRequest($body, $shipment_id);
 
         try {
@@ -5285,7 +5285,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5293,7 +5293,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5301,7 +5301,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5309,7 +5309,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5317,7 +5317,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5325,7 +5325,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5333,7 +5333,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5341,7 +5341,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InboundShipmentResponse',
+                        '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5356,7 +5356,7 @@ class FbaInboundApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\InboundShipmentRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest $body (required)
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -5377,7 +5377,7 @@ class FbaInboundApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\InboundShipmentRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest $body (required)
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -5385,7 +5385,7 @@ class FbaInboundApi
      */
     public function updateInboundShipmentAsyncWithHttpInfo($body, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\InboundShipmentResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\InboundShipmentResponse';
         $request = $this->updateInboundShipmentRequest($body, $shipment_id);
 
         return $this->client
@@ -5428,7 +5428,7 @@ class FbaInboundApi
     /**
      * Create request for operation 'updateInboundShipment'
      *
-     * @param  \Swagger\Client\Model\InboundShipmentRequest $body (required)
+     * @param  \CrazyFactory\Spapi\Client\Model\InboundShipmentRequest $body (required)
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
      * @throws \InvalidArgumentException
@@ -5545,9 +5545,9 @@ class FbaInboundApi
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VoidTransportResponse
+     * @return \CrazyFactory\Spapi\Client\Model\VoidTransportResponse
      */
     public function voidTransport($shipment_id)
     {
@@ -5560,13 +5560,13 @@ class FbaInboundApi
      *
      * @param  string $shipment_id A shipment identifier originally returned by the createInboundShipmentPlan operation. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CrazyFactory\Spapi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VoidTransportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CrazyFactory\Spapi\Client\Model\VoidTransportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function voidTransportWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\VoidTransportResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\VoidTransportResponse';
         $request = $this->voidTransportRequest($shipment_id);
 
         try {
@@ -5618,7 +5618,7 @@ class FbaInboundApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VoidTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\VoidTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5626,7 +5626,7 @@ class FbaInboundApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VoidTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\VoidTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5634,7 +5634,7 @@ class FbaInboundApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VoidTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\VoidTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5642,7 +5642,7 @@ class FbaInboundApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VoidTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\VoidTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5650,7 +5650,7 @@ class FbaInboundApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VoidTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\VoidTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5658,7 +5658,7 @@ class FbaInboundApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VoidTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\VoidTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5666,7 +5666,7 @@ class FbaInboundApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VoidTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\VoidTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5674,7 +5674,7 @@ class FbaInboundApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VoidTransportResponse',
+                        '\CrazyFactory\Spapi\Client\Model\VoidTransportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5716,7 +5716,7 @@ class FbaInboundApi
      */
     public function voidTransportAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\VoidTransportResponse';
+        $returnType = '\CrazyFactory\Spapi\Client\Model\VoidTransportResponse';
         $request = $this->voidTransportRequest($shipment_id);
 
         return $this->client

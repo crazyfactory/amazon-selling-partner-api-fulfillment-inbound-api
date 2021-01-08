@@ -1,5 +1,5 @@
 <?php
-namespace CrazyFactory\Spapi;
+namespace CrazyFactory\Spapi\Client;
 
 trait HttpClientFactoryTrait {
   private function createHttpClient($config)
