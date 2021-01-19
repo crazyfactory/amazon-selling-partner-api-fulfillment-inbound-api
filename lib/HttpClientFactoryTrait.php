@@ -4,8 +4,8 @@ namespace CrazyFactory\SpapiClient;
 trait HttpClientFactoryTrait {
   private function createHttpClient($config)
   {
-    $httpConfig = $this->config['http'] ?? [];
-    $httpConfig = array_merge($httpConfig, $config);
+    $debug = $this->config->getDebug() ?? false;
+    $httpConfig = array_merge(['debug' => $debug], $config);
     return new \GuzzleHttp\Client($httpConfig);
   }
 
