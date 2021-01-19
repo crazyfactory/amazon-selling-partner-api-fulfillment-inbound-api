@@ -92,8 +92,8 @@ class Credentials
         try {
             $signedHeader = Authentication::calculateSignature([
                 'service' => 'sts',
-                'access_key' => $this->config->getApiKey('access_key'),
-                'secret_key' => $this->config->getApiKey('secret_key'),
+                'accessKey' => $this->config->getApiKey('access_key'),
+                'secretKey' => $this->config->getApiKey('secret_key'),
                 'region' => 'us-east-1', // Global STS region
                 'host' => $host,
                 'uri' => $uri,
