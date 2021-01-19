@@ -109,8 +109,10 @@ class Credentials
             'base_uri' => 'https://' . $host
         ]);
 
+        $requestOptions['headers'] = array_merge($requestOptions['headers'], $signedHeader);
+
         try {
-            $response = $client->post($uri, array_merge($requestOptions, $signedHeader));
+            $response = $client->post($uri, $requestOptions);
 
             $json = json_decode($response->getBody(), true);
             $credentials = $json['AssumeRoleResponse']['AssumeRoleResult']['Credentials'] ?? null;
