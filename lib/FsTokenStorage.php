@@ -1,7 +1,7 @@
 <?php
 namespace CrazyFactory\SpapiClient;
 
-class SimpleTokenStorage implements TokenStorageInterface {
+class FsTokenStorage implements TokenStorageInterface {
 
   private $filePath;
   public function __construct($filePath)
