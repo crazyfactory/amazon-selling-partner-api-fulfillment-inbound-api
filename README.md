@@ -157,7 +157,6 @@ Class | Method | HTTP request | Description
  - [InboundShipmentPlan](docs/Model/InboundShipmentPlan.md)
  - [InboundShipmentPlanItem](docs/Model/InboundShipmentPlanItem.md)
  - [InboundShipmentPlanItemList](docs/Model/InboundShipmentPlanItemList.md)
- - [InboundShipmentPlanList](docs/Model/InboundShipmentPlanList.md)
  - [InboundShipmentPlanRequestItem](docs/Model/InboundShipmentPlanRequestItem.md)
  - [InboundShipmentPlanRequestItemList](docs/Model/InboundShipmentPlanRequestItemList.md)
  - [InboundShipmentRequest](docs/Model/InboundShipmentRequest.md)

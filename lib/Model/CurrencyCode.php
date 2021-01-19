@@ -46,6 +46,7 @@ class CurrencyCode
      */
     const USD = 'USD';
     const GBP = 'GBP';
+    const EUR = 'EUR';
     
     /**
      * Gets allowable values of the enum
@@ -56,6 +57,7 @@ class CurrencyCode
         return [
             self::USD,
             self::GBP,
+            self::EUR,
         ];
     }
 }
