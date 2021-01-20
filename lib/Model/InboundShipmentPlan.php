@@ -62,7 +62,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
         'destination_fulfillment_center_id' => 'string',
         'ship_to_address' => '\CrazyFactory\SpapiClient\Model\Address',
         'label_prep_type' => '\CrazyFactory\SpapiClient\Model\LabelPrepType',
-        'items' => '\CrazyFactory\SpapiClient\Model\InboundShipmentPlanItemList',
+        'items' => 'map[int,\CrazyFactory\SpapiClient\Model\InboundShipmentPlanItem]',
         'estimated_box_contents_fee' => '\CrazyFactory\SpapiClient\Model\BoxContentsFeeDetails'
     ];
 
@@ -349,7 +349,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \CrazyFactory\SpapiClient\Model\InboundShipmentPlanItemList
+     * @return array
      */
     public function getItems()
     {
@@ -359,7 +359,7 @@ class InboundShipmentPlan implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \CrazyFactory\SpapiClient\Model\InboundShipmentPlanItemList $items SKU and quantity information for the items in the shipment.
+     * @param array $items SKU and quantity information for the items in the shipment.
      *
      * @return $this
      */

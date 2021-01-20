@@ -60,7 +60,7 @@ class InboundShipmentPlanItem implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'seller_sku' => 'string',
         'fulfillment_network_sku' => 'string',
-        'quantity' => '\CrazyFactory\SpapiClient\Model\Quantity',
+        'quantity' => 'int',
         'prep_details_list' => '\CrazyFactory\SpapiClient\Model\PrepDetailsList'
     ];
 
