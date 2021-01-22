@@ -57,7 +57,7 @@ class GetShipmentsResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'shipment_data' => '\CrazyFactory\SpapiClient\Model\InboundShipmentList',
+        'shipment_data' => 'map[int,\CrazyFactory\SpapiClient\Model\InboundShipmentInfo]',
         'next_token' => 'string'
     ];
 
@@ -213,7 +213,7 @@ class GetShipmentsResult implements ModelInterface, ArrayAccess
     /**
      * Gets shipment_data
      *
-     * @return \CrazyFactory\SpapiClient\Model\InboundShipmentList
+     * @return array
      */
     public function getShipmentData()
     {
@@ -223,7 +223,7 @@ class GetShipmentsResult implements ModelInterface, ArrayAccess
     /**
      * Sets shipment_data
      *
-     * @param \CrazyFactory\SpapiClient\Model\InboundShipmentList $shipment_data Information about your inbound shipments.
+     * @param array $shipment_data Information about your inbound shipments.
      *
      * @return $this
      */
