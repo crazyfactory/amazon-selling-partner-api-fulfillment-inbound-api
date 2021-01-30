@@ -53,15 +53,60 @@ composer install
 
 Please follow the [installation procedure](#installation--usage) and then run the following:
 
+A method within aclass to get the API instance (via config DI) -- You need to upddate the config source as you wish.
+It will automatically handle your request and signing your request using https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html
+
+```php
+/**
+     * Get authenticated FBA Inbound API Instance using
+     * credential from the configuration
+     *
+     * @return FbaInboundApi
+     */
+    public function getFbaInboundApiInstance(): FbaInboundApi
+    {
+        $tokenStorage = new FsTokenStorage($this->config->get('application')->get('cacheDir') . DS . '.aws-tokens');
+        $stsAuthenticationConfiguration = new Configuration();
+        $stsConfig = $this->config->get('aws')->get('sts');
+        $lwaConfig = $this->config->get('amazon')->get('lwa');
+        $spApiConfig = $this->config->get('amazon')->get('selling_partner_api');
+
+        $stsAuthenticationConfiguration->setApiKey('refresh_token', $lwaConfig['refresh_token']);
+        $stsAuthenticationConfiguration->setApiKey('client_id', $lwaConfig['client_id']);
+        $stsAuthenticationConfiguration->setApiKey('client_secret', $lwaConfig['client_secret']);
+        $stsAuthenticationConfiguration->setApiKey('access_key', $stsConfig['access_key']);
+        $stsAuthenticationConfiguration->setApiKey('secret_key', $stsConfig['secret_key']);
+        $stsAuthenticationConfiguration->setApiKey('role_arn', $stsConfig['role_arn']);
+        $stsAuthenticationConfiguration->setDebug(false);
+
+        $credential = new Credentials($tokenStorage, $stsAuthenticationConfiguration);
+        // Cache and retrieve both LWA tokens and assumeRole via sts tokens
+        $tokens = $credential->getCredentials();
+
+        $config = Configuration::getDefaultConfiguration();
+        $config->setAccessToken($tokens['lwa_access_token']);
+        $config->setApiKey('accessKey', $tokens['sts_credentials']['access_key']);
+        $config->setApiKey('secretKey', $tokens['sts_credentials']['secret_key']);
+        $config->setApiKey('region', $spApiConfig['region']);
+        $config->setApiKey('securityToken', $tokens['sts_credentials']['session_token']);
+        $config->setDebug(false);
+        $config->setHost($spApiConfig['host']);
+
+        return new FbaInboundApi(
+            new Client(),
+            $config
+        );
+    }
+```
+
+
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new CrazyFactory\SpapiClient\Api\FbaInboundApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
-);
+$apiInstance =  ....... // Instantiate it from the above method getFbaInboundApiInstance
+
 $shipment_id = "shipment_id_example"; // string | A shipment identifier originally returned by the createInboundShipmentPlan operation.
 $need_by_date = new \DateTime("2013-10-20"); // \DateTime | Date that the shipment must arrive at the Amazon fulfillment center to avoid delivery promise breaks for pre-ordered items. Must be in YYYY-MM-DD format. The response to the getPreorderInfo operation returns this value.
 $marketplace_id = "marketplace_id_example"; // string | A marketplace identifier. Specifies the marketplace the shipment is tied to.
