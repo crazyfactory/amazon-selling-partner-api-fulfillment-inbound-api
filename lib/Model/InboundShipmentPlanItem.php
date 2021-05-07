@@ -283,7 +283,7 @@ class InboundShipmentPlanItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity
      *
-     * @return \CrazyFactory\SpapiClient\Model\Quantity
+     * @return int
      */
     public function getQuantity()
     {
@@ -293,7 +293,7 @@ class InboundShipmentPlanItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity
      *
-     * @param \CrazyFactory\SpapiClient\Model\Quantity $quantity The item quantity that you are shipping.
+     * @param int The item quantity that you are shipping.
      *
      * @return $this
      */
