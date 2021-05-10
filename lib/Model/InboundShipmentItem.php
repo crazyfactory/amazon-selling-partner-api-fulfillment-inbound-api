@@ -61,11 +61,11 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
         'shipment_id' => 'string',
         'seller_sku' => 'string',
         'fulfillment_network_sku' => 'string',
-        'quantity_shipped' => '\CrazyFactory\SpapiClient\Model\Quantity',
-        'quantity_received' => '\CrazyFactory\SpapiClient\Model\Quantity',
-        'quantity_in_case' => '\CrazyFactory\SpapiClient\Model\Quantity',
+		'quantity_shipped' => 'int',
+		'quantity_received' => 'int',
+		'quantity_in_case' => 'int',
         'release_date' => '\CrazyFactory\SpapiClient\Model\DateStringType',
-        'prep_details_list' => '\CrazyFactory\SpapiClient\Model\PrepDetailsList'
+		'prep_details_list' => 'map[int,\CrazyFactory\SpapiClient\Model\PrepDetails]'
     ];
 
     /**
@@ -328,7 +328,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity_shipped
      *
-     * @return \CrazyFactory\SpapiClient\Model\Quantity
+     * @return int
      */
     public function getQuantityShipped()
     {
@@ -338,7 +338,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity_shipped
      *
-     * @param \CrazyFactory\SpapiClient\Model\Quantity $quantity_shipped The item quantity that you are shipping.
+     * @param int $quantity_shipped The item quantity that you are shipping.
      *
      * @return $this
      */
@@ -352,7 +352,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity_received
      *
-     * @return \CrazyFactory\SpapiClient\Model\Quantity
+     * @return int
      */
     public function getQuantityReceived()
     {
@@ -362,7 +362,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity_received
      *
-     * @param \CrazyFactory\SpapiClient\Model\Quantity $quantity_received The item quantity that has been received at an Amazon fulfillment center.
+     * @param int $quantity_received The item quantity that has been received at an Amazon fulfillment center.
      *
      * @return $this
      */
@@ -376,7 +376,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Gets quantity_in_case
      *
-     * @return \CrazyFactory\SpapiClient\Model\Quantity
+     * @return int
      */
     public function getQuantityInCase()
     {
@@ -386,7 +386,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Sets quantity_in_case
      *
-     * @param \CrazyFactory\SpapiClient\Model\Quantity $quantity_in_case The item quantity in each case, for case-packed items. Note that QuantityInCase multiplied by the number of boxes in the inbound shipment equals QuantityShipped. Also note that all of the boxes of an inbound shipment must either be case packed or individually packed. For that reason, when you submit the createInboundShipment or the updateInboundShipment operation, the value of QuantityInCase must be provided for every item in the shipment or for none of the items in the shipment.
+     * @param int $quantity_in_case The item quantity in each case, for case-packed items. Note that QuantityInCase multiplied by the number of boxes in the inbound shipment equals QuantityShipped. Also note that all of the boxes of an inbound shipment must either be case packed or individually packed. For that reason, when you submit the createInboundShipment or the updateInboundShipment operation, the value of QuantityInCase must be provided for every item in the shipment or for none of the items in the shipment.
      *
      * @return $this
      */
@@ -424,7 +424,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Gets prep_details_list
      *
-     * @return \CrazyFactory\SpapiClient\Model\PrepDetailsList
+     * @return \CrazyFactory\SpapiClient\Model\PrepDetails[]
      */
     public function getPrepDetailsList()
     {
@@ -434,7 +434,7 @@ class InboundShipmentItem implements ModelInterface, ArrayAccess
     /**
      * Sets prep_details_list
      *
-     * @param \CrazyFactory\SpapiClient\Model\PrepDetailsList $prep_details_list prep_details_list
+     * @param \CrazyFactory\SpapiClient\Model\PrepDetails[] $prep_details_list prep_details_list
      *
      * @return $this
      */
